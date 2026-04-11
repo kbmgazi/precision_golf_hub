@@ -85,7 +85,101 @@
                     </aside>
 
                     <!--Fitting form-->
-                    
+                    <div class="form_wrap">
+                        <span class="eyebrow" style="display: block;margin-bottom: .25rem;">Fitting Booking Form</span>
+                        <h3 style="margin-bottom: 1.8rem;">Reserve Your Fitting Session</h3>
+
+                        <!--form action to be replaced with the server side -->
+                        <form action="https//form-server-side.com/book-fitting" method="post" novalidate aria-label="Fitting booking form">
+                            <div class="form_grid">
+
+                                <div class="form_group">
+                                    <label for="bf_first">First Name <span aria-hidden="true" style="color: var(--gold);">*</span></label>
+                                    <input type="text" name="first_name" id="bf_first" placeholder="Your first name" autocomplete="given-name" required aria-required="true">
+                                </div>
+
+                                <div class="form_group">
+                                    <label for="bf_last">Last Name <span aria-hidden="true" style="color: var(--gold);">*</span></label>
+                                    <input type="text" name="last_name" id="bf_first" placeholder="Your last name" autocomplete="family-name" required aria-required="true">
+                                </div>
+
+                                <div class="form_group">
+                                    <label for="bf_email">Email Address<span aria-hidden="true" style="color: var(--gold);">*</span></label>
+                                    <input type="email" name="email" id="bf_email" placeholder="you@gmail.com" autocomplete="email" required aria-required="true">
+                                </div>
+
+                                <div class="form_group">
+                                    <label for="bf_phone">Phone Numeber<span aria-hidden="true" style="color: var(--gold);">*</span></label>
+                                    <input type="tel" name="Phone" id="bf_phone" placeholder="+27 83 82 6545" autocomplete="given-name" required aria-required="true">
+                                </div>
+
+                                <div class="form_group">
+                                    <label for="bf_type">Fitting Type <span aria-hidden="true" style="color: var(--gold);">*</span></label>
+                                    <select name="fitting_type" id="bf_type" required aria-hidden="true">
+                                        <option value="" disabled selected>Select fitting type.....</option>
+                                        <option value="full_bag">Full Bag Fitting - R999</option>
+                                        <option value="single_club">Single Club Fitting - R450</option>
+                                        <option value="driver">Driver Only Fitting - R499</option>
+                                        <option value="irons">Iron set Fitting - R350</option>
+                                        <option value="putter">Putter Fitting - R350</option>
+                                    </select>
+                                </div>
+
+                                <div class="form_group">
+                                    <label for="bf_location">Preferred Location<span aria-hidden="true" style="color: var(--gold);">*</span></label>
+                                    <select name="location" id="bf_location" required aria-hidden="true">
+                                        <option value="" disabled selected>Choose location.....</option>
+                                        <option value="jhb">Johannesburg - Sandton</option>
+                                        <option value="cpt">Cape Town - Claremont</option>
+                                        <option value="Durban">Durban - Umhlanga</option>
+                                    </select>
+
+                                <div class="form_group">
+                                    <label for="bf_date">Preferred Date</label>
+                                    <input type="date" id="bf_date" name="prferred_date">
+                                </div>
+
+                                <div class="form_group">
+                                    <label for="bf_handicap">Current Handicap (Optional)</label>
+                                    <input type="text" id="bf_handicap" name="handicap" placeholder="e.g. 14 or Beginner">
+                                </div>
+
+                                <div class="form_group_full">
+                                    <label for="bf_notes">Additional Notes</label>
+                                    <textarea name="notes" id="bf_notes" placeholder="Any current injuries, current equipment, specific goals we should know about..."></textarea>
+                                </div>
+
+                                <div class="form_group_full">
+                                    <button type="submit" class="btn_gold_form_submit">Confirm Booking</button>
+                                </div>
+                                
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!--Section 2-->
+        <section class="section_cream" id="service_request" aria-labelledby="svc_req_h">
+            <div class="container">
+                <header class="sxhd_centered">
+                    <span class="eyebrow">Service Request Form</span>
+                    <h2 id="svc_req_h">Service Request Form</h2>
+                    <div class="divider_c"></div>
+                    <p>Request ball personalisation, equipment consulting , club repair or make a general enquiry</p>
+                </header>
+
+                <div class="enquiry_layout">
+                    <!--Info sidebar-->
+                    <aside class="enq_info" aria-label="Service request information">
+                        <h3>Response Times</h3>
+                        <div class="enq_step">
+                            <div class="enq_step_num" aria-hidden="true" style="font-size: .8rem;">1d</div>
+                            <p><strong>Club Repair &amp; </strong></p>
+                        </div>
+                    </aside>
                 </div>
             </div>
         </section>
