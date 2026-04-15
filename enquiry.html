@@ -1,189 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--Basic browswe info-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Precision Golf Hub services: Custom Club Fitting, Golf Ball Personalisation, Equipment Consulting and Club Repair.">
-    <title>Booking &amp;Enquiry | Precision Golf Hub</title>
+    <meta name="description" content="Precision Golf Hub - Golf equipment, club fitting , coaching and more">
+    <title>Precision Golf Hub | Home</title>
+
+    <!--css link-->
     <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
-    <!--Header-->
-    <header class="site_header">
-        <div class="header_inner">
-            <a href="index.html" class="logo" aria-label="Precision Golf Hub - Home">
-                <span class="logo_name">Precision Golf Hub</span>
-                <span class="logo_sub">Est. 2008 . Premium Golf</span>
-            </a>
-            <nav class="primary_nav" aria-label="Primary navigation">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="products.html">Shop</a></li>
-                    <li><a href="tips.html">Tips</a></li>
-                    <li><a href="offers.html">Offers</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="enquiry.html" class="nav_book_active">Book Now</a></li>
-                </ul>
-            </nav>
-        </div>
+    <!--header-->
+    <header>
+        <h1>Precision Golf Hub</h1>
+        <p>Est.2008 &mdash; South Africa's Premier Golf Destination</p>
     </header>
 
-    <!--Main section-->
+    <!--Navigation-->
+
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">Abour Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="enquiry.html">Booking|Enquiry</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="tips.html"></a>Golf Tips</li>
+            <li><a href="offers.html">Special Offers</a></li>
+        </ul>
+    </nav>
+
+    <!--main content-->
     <main>
-        <section class="page_hero" aria-label="Booking hero">
-            <nav class="breadcrumb" aria-label="Breadcrumb">
-                <a href="index.html">Home</a>
-                <span aria-hidden="true">/</span>
-                <span aria-current="page">Booking &amp; Enquiry</span>
-            </nav>
-            <h1>Book a Session</h1>
-            <p>Complete the form below and our team will confirm your booking within one business day.</p>
+        <!--Page title-->
+        <section>
+            <h2>Booking and Equiry</h2>
+            <p>
+                Use the forms below to book a fitting session or submit a general service request. 
+                We will reply within one business day.
+            </p>
         </section>
 
-        <!--section 1 book fitting-->
-        <section class="section_white" id="book_fitting" aria-labelledby="book_fitting_h">
-            <div class="container">
-                <header class="sxhd_centered">
-                    <span class="eyebrow">Book Fitting</span>
-                    <h2 id="book_fitting_h">Book a Club Fitting</h2>
-                    <div class="divider_c"></div>
-                    <p>Select a fitting type, preferred date and location. We will confirm your slot by return call or email.</p>
-                </header>
+        <!--Book fitting-->
+        <section id="book_fitting">
+            <h2>Book a Fitting</h2>
+            <p>Fill in the form below to reserve your club fitting session.</p>
 
-                <div class="enquiry_layout">
+            <h3>How it works</h3>
+            <ul>
+                <li>1. Fill in the form with your details and preferred fitting type.</li>
+                <li>2. Our team will contact you to confirm a date and time.</li>
+                <li>3. Arrive at your chosen location and we handle everything else.</li>
+            </ul>
 
-                    <!--info sidebar-->
-                    <aside class="enq_info" aria-label="Fitting booking information">
-                        <h3>How It workshop</h3>
-                        <div class="enq_step">
-                            <div class="enq_step_num" aria-hidden="true">1</div>
-                            <p>Complete the fitting booking form with your details and preferred fitting type.</p>
-                        </div>
-
-                        <div class="enq_step">
-                            <div class="enq_step_num" aria-hidden="true">1</div>
-                            <p>Our fitting team reviews your request and contacts you to confirm your preferred time slot.</p>
-                        </div>
-
-                        <div class="enq_step">
-                            <div class="enq_step_num" aria-hidden="true">1</div>
-                            <p>Arrive at your own choosen location ready to hit - we handle everything else.</p>
-                        </div>
-
-                        <!--Fitting types-->
-                        <div style="margin-top: 1.5rem;padding-top: 1.5rem;border-top: 1px solid var(--grey-rule);">
-                            <h4 style="margin-bottom: .8rem;font-size: 1rem;">Fitting Options</h4>
-                            <ul style="font-size: .86rem;color: var(--grey-mid);">
-                                <li style="padding: .35rem 0;border-bottom: 1px solid var(--grey-rule);">Single Club Fitting - R450</li>
-                                 <li style="padding: .35rem 0;border-bottom: 1px solid var(--grey-rule);">Full Bag Fitting - R999</li>
-                                  <li style="padding: .35rem 0;border-bottom: 1px solid var(--grey-rule);">Putter Fitting - R350</li>
-                            </ul>
-                        </div>
-                    </aside>
-
-                    <!--Fitting form-->
-                    <div class="form_wrap">
-                        <span class="eyebrow" style="display: block;margin-bottom: .25rem;">Fitting Booking Form</span>
-                        <h3 style="margin-bottom: 1.8rem;">Reserve Your Fitting Session</h3>
-
-                        <!--form action to be replaced with the server side -->
-                        <form action="https//form-server-side.com/book-fitting" method="post" novalidate aria-label="Fitting booking form">
-                            <div class="form_grid">
-
-                                <div class="form_group">
-                                    <label for="bf_first">First Name <span aria-hidden="true" style="color: var(--gold);">*</span></label>
-                                    <input type="text" name="first_name" id="bf_first" placeholder="Your first name" autocomplete="given-name" required aria-required="true">
-                                </div>
-
-                                <div class="form_group">
-                                    <label for="bf_last">Last Name <span aria-hidden="true" style="color: var(--gold);">*</span></label>
-                                    <input type="text" name="last_name" id="bf_first" placeholder="Your last name" autocomplete="family-name" required aria-required="true">
-                                </div>
-
-                                <div class="form_group">
-                                    <label for="bf_email">Email Address<span aria-hidden="true" style="color: var(--gold);">*</span></label>
-                                    <input type="email" name="email" id="bf_email" placeholder="you@gmail.com" autocomplete="email" required aria-required="true">
-                                </div>
-
-                                <div class="form_group">
-                                    <label for="bf_phone">Phone Numeber<span aria-hidden="true" style="color: var(--gold);">*</span></label>
-                                    <input type="tel" name="Phone" id="bf_phone" placeholder="+27 83 82 6545" autocomplete="given-name" required aria-required="true">
-                                </div>
-
-                                <div class="form_group">
-                                    <label for="bf_type">Fitting Type <span aria-hidden="true" style="color: var(--gold);">*</span></label>
-                                    <select name="fitting_type" id="bf_type" required aria-hidden="true">
-                                        <option value="" disabled selected>Select fitting type.....</option>
-                                        <option value="full_bag">Full Bag Fitting - R999</option>
-                                        <option value="single_club">Single Club Fitting - R450</option>
-                                        <option value="driver">Driver Only Fitting - R499</option>
-                                        <option value="irons">Iron set Fitting - R350</option>
-                                        <option value="putter">Putter Fitting - R350</option>
-                                    </select>
-                                </div>
-
-                                <div class="form_group">
-                                    <label for="bf_location">Preferred Location<span aria-hidden="true" style="color: var(--gold);">*</span></label>
-                                    <select name="location" id="bf_location" required aria-hidden="true">
-                                        <option value="" disabled selected>Choose location.....</option>
-                                        <option value="jhb">Johannesburg - Sandton</option>
-                                        <option value="cpt">Cape Town - Claremont</option>
-                                        <option value="Durban">Durban - Umhlanga</option>
-                                    </select>
-
-                                <div class="form_group">
-                                    <label for="bf_date">Preferred Date</label>
-                                    <input type="date" id="bf_date" name="prferred_date">
-                                </div>
-
-                                <div class="form_group">
-                                    <label for="bf_handicap">Current Handicap (Optional)</label>
-                                    <input type="text" id="bf_handicap" name="handicap" placeholder="e.g. 14 or Beginner">
-                                </div>
-
-                                <div class="form_group_full">
-                                    <label for="bf_notes">Additional Notes</label>
-                                    <textarea name="notes" id="bf_notes" placeholder="Any current injuries, current equipment, specific goals we should know about..."></textarea>
-                                </div>
-
-                                <div class="form_group_full">
-                                    <button type="submit" class="btn_gold_form_submit">Confirm Booking</button>
-                                </div>
-                                
-                            </div>
-                        </form>
-                    </div>
-
+            <!--Fitting booking form-->
+            <form action="" method="post">
+                <!--first name-->
+                <div class="form_row">
+                    <label for="first_name">First Name</label>
+                    <input type="text" name="first_name" id="first_name" placeholder="Enter your first name" required>
                 </div>
-            </div>
+
+                <!--last name-->
+                <div class="form_row">
+                    <label for="last_name">Last Name</label>
+                    <input type="text" name="last_name" id="last_name" placeholder="Enter your last name" required>
+                </div>
+
+                <!--Email address-->
+                <div class="form_row">
+                    <label for="email">Email Address</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email address" required>
+                </div>
+
+                <!--Phone number-->
+                <div class="form_row">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" name="phone" id="phone" placeholder="e.g. 082 909 8750" required>
+                </div>
+
+                <!--fitting type dropdown-->
+                <div class="form_row">
+                    <label for="fitting_type">Fitting Type</label>
+                    <select name="fitting_type" id="fitting_type">
+                        <option value="">-- Please choose a fitting type --</option>
+                        <option value="full_bag">Full Bag Fitting - R999</option>
+                        <option value="single_club">Single Club Fitting - R450</option>
+                        <option value="driver">Driver Only Fitting - R499</option>
+                        <option value="Putter">Putter Fitting - R350</option>
+                    </select>
+                </div>
+
+                <!--Preferred Location-->
+                <div class="form_row">
+                    <label for="first_name">First Name</label>
+                    <select name="location" id="location" required>
+                        <option value="">-- Please choose location --</option>
+                        <option value="Johannesburg">Johannesburg - Sandton</option>
+                        <option value="cape_town">Cape Town - Claremont</option>
+                        <option value="Durban">Durban - Umhlanga</option>
+                    </select>
+                </div>
+
+                <!--Preferred date-->
+                <div class="form_row">
+                    <label for="preferred_date">Preferred Date</label>
+                    <input type="date" id="preferred_date" name="preferred_date">
+                </div>
+
+                <!--extra notes-->
+                <div class="form_row">
+                    <label for="fitting_notes">Additional Notes (optional)</label>
+                    <textarea name="notes" id="fitting_notes" placeholder="Tell us about your current equipment, any injuries or specific goals."></textarea>
+                </div>
+
+                <!--submit button-->
+                <button type="button" class="form_submit">Submit Fitting Booking</button>
+
+            </form>
         </section>
 
-        <!--Section 2-->
-        <section class="section_cream" id="service_request" aria-labelledby="svc_req_h">
-            <div class="container">
-                <header class="sxhd_centered">
-                    <span class="eyebrow">Service Request Form</span>
-                    <h2 id="svc_req_h">Service Request Form</h2>
-                    <div class="divider_c"></div>
-                    <p>Request ball personalisation, equipment consulting , club repair or make a general enquiry</p>
-                </header>
+        <!--service request-->
+        <section id="service_request">
+            <h2>Service Request Form</h2>
 
-                <div class="enquiry_layout">
-                    <!--Info sidebar-->
-                    <aside class="enq_info" aria-label="Service request information">
-                        <h3>Response Times</h3>
-                        <div class="enq_step">
-                            <div class="enq_step_num" aria-hidden="true" style="font-size: .8rem;">1d</div>
-                            <p><strong>Club Repair &amp; </strong></p>
-                        </div>
-                    </aside>
+            <p>
+                Use this form to request a club repair, ball personalisation, equipment consulting or to ask us any question.
+            </p>
+
+            <!--Service request form-->
+            <form action="" method="post">
+
+                <!--Full name-->
+                <div class="form_row">
+                    <label for="sr_name">Full Name</label>
+                    <input type="text" id="sr_name" name="full_name" placeholder="Enter your full name" required>
                 </div>
-            </div>
+
+                <!--Email Address-->
+                <div class="form_row">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="sr_email" name="email" placeholder="Enter your email address" required>
+                </div>
+
+                <!--Phone number-->
+                <div class="form_row">
+                    <label for="sr_phone">Phone Number</label>
+                    <input type="tel" id="sr_phone" name="phone" placeholder="e.g. 082 765 9806" required>
+                </div>
+
+                <!--Service type dropdown-->
+                <div class="form_row">
+                    <label for="service">Service Required</label>
+                    <select name="service" id="service" required>
+                        <option value="">-- Please choose a service --</option>
+                        <option value="full_bag_fitting">Full Bag Club Fitting</option>
+                        <option value="single_club_fitting">Single Club Fitting</option>
+                        <option value="putter_fitting">Putter Fitting</option>
+                        <option value="ball_personalisation">Golf Ball Personalisation</option>
+                        <option value="equipment_consulting">Equipment Consulting</option>
+                        <option value="re_gripping">Club Re-gripping</option>
+                        <option value="shaft_replacement">Shaft Replacement</option>
+                        <option value="loft_lie">Loft and Lie Adjustment</option>
+                        <option value="full_repair">Full Club Refurbishment</option>
+                        <option value="general">General Equiry</option>
+                    </select>
+                </div>
+
+                <!--Message-->
+                <div class="form_row">
+                    <label for="sr_message">Message</label>
+                    <textarea name="message" id="sr_message" placeholder="Describe your request in detail." required></textarea>
+                </div>
+                
+                <!--submit button-->
+                <button type="submit" class="form_submit">Submit Service Request</button>
+            </form>
+        </section>
+
+        <!--Opening hour info-->
+        <section>
+            <h2>Our Trading Hours</h2>
+            <ul>
+                <li>Monday to Friday: 08h00 - 18h00</li>
+                <li>Saturday: 08h00 - 16h00</li>
+                <li>Sunday and Public Holidays: 09h00 - 13h00</li>
+            </ul>
+            <p>We reply to all equiries within one business day.</p>
         </section>
     </main>
+   
+
+    <!--Footer-->
+    <footer>
+        <h3>Precision Golf Hub</h3>
+        <p>South Africa's Premier golf equipment and services destination.</p>
+
+        <!--Footer nav links-->
+        <ul class="footer_links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="tips.html">Golf Tips</a></li>
+            <li><a href="offers.html">Offers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="enquiry.html">Book Now</a></li>
+        </ul>
+
+        <!--contact details-->
+        <p>Phone : <a href="tel: +27 83 862 6545">+27 83 862 6545</a></p>
+        <p>Email: <a href="mailto:info@precisiongolfhub.co.za">info@precisiongolfhub.co.za</a></p>
+        <p>Address: 14 Fairway Drive, Sandton, Johannesburg, 2196</p>
+
+        <div class="footer_bottom">
+            <p>&copy; 2025 Precision Golf Hub. All rights reserved.</p>
+        </div>
+    </footer>
     
 </body>
 </html>
