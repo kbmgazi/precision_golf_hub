@@ -104,10 +104,59 @@
                     </select>
                 </div>
 
+                <!--patner golf club selection-->
+                <div class="form_row">
+                    <label for="partner_club">Partner Golf Club (optional)</label>
+                    <select name="partner_club" id="partner_club">
+                        <option value="">-- No preference / Not a member --</option>
+
+                        <!--johannesburg-->
+                        <optgroup label="Johannesburg">
+                            <option value="rjk">Royal Johannesburg and Kensington Golf Club</option>
+                            <option value="soweto">Soweto Country Club</option>
+                        </optgroup>
+
+                        <!--Cape Town clubs-->
+                        <optgroup label="Cape Town">
+                            <option value="royal_cape">Royal Cape Golf Club</option>
+                        </optgroup>
+
+                        <!--Durban clubs-->
+                        <optgroup label="Durban">
+                            <option value="beachwood">Beachwood Golf Club</option>
+                        </optgroup>
+
+                        <!--other-->
+                        <optgroup label="Other Locations">
+                            <option value="fancourt">Ernie Els at Fancourt (Garden Route)</option>
+                            <option value="sun_city">Sun City Gary Player Country Club</option>
+                        </optgroup>
+                    </select>
+                    <!--note below dropdown-->
+                    <p style="font-size: 13px; color: #777777; margin-top: 10px;"></p>
+                </div>
+
                 <!--Preferred date-->
                 <div class="form_row">
                     <label for="preferred_date">Preferred Date</label>
                     <input type="date" id="preferred_date" name="preferred_date">
+                </div>
+
+                <!--Preferred time-->
+                <div class="form_row">
+                    <label for="preferred_time">Preferred Time</label>
+                    <select name="preferred_time" id="preferred_time">
+                        <option value="">--Please choose a time slot --</option>
+                        <option value="08:00">08:00 AM</option>
+                        <option value="09:00">09:00 AM</option>
+                        <option value="10:00">10:00 AM</option>
+                        <option value="11:00">11:00 AM</option>
+                        <option value="12:00">12:00 PM</option>
+                        <option value="13:00">13:00 PM</option>
+                        <option value="14:00">14:00 PM</option>
+                        <option value="15:00">15:00 PM</option>
+                        <option value="16:00">16:00 PM</option>
+                    </select>
                 </div>
 
                 <!--extra notes-->
