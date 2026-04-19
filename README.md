@@ -8,7 +8,7 @@
 |---|---|
 | **Full Name** | Keamohetse Biotshepo|
 | **Student Number** | ST10511607 |
-| **Course / Module Name** | WEDE5020 |
+| **Module Name** | WEDE5020 |
 | **Submission Date** | 20 April 2025 |
 
 ---
