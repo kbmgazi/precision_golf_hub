@@ -1,0 +1,8 @@
+a36966d Day 7: Upadeted enquiry.html
+8a42268 Day 7 : Completed tips.html . Therefore Part 1 is complete
+211e6e1 Day 5-6: Created contact.html; enquiry.html ; offer.html and products.html. Tips.html is work in progress
+65521b7 Day 4:Updated index.html , about.html & services.html
+7046ded Day 3:Completed service.html ; Created enquiry.html still work in progress
+db9b6a2 Day 3:Created services.html ; still work in progress.
+1329d34 Day 2: Created about.html page and completed
+e341c5f Day 1: Project structure and HTML file creation
