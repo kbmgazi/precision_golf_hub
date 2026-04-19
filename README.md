@@ -6,19 +6,16 @@
 
 | Field | Details |
 |---|---|
-| **Full Name** | [Your Full Name] |
-| **Student Number** | [Your Student Number] |
-| **Course / Module Name** | [Your Course / Module Name] |
-| **Lecturer** | [Lecturer Name] |
-| **Submission Date** | [Date] |
+| **Full Name** | Keamohetse Biotshepo|
+| **Student Number** | ST10511607 |
+| **Course / Module Name** | WEDE5020 |
+| **Submission Date** | 20 April 2025 |
 
 ---
 
 ## Project Overview
 
-Precision Golf Hub is a fictional South African sports technology and equipment service company, founded in March 2024. The organisation was created to address common challenges faced by golfers, including limited access to professional equipment fitting, reliable equipment solutions, and convenient service booking.
-
-This project involves the design and development of a fully functional, multi-page website for Precision Golf Hub. The website serves as a centralised digital platform connecting golfers with professional club fitting services, personalised equipment solutions, educational resources, and partner golf club integrations.
+Precision Golf Hub is a fictional South African sports technology and equipment service company, founded in March 2024. The organisation was created to address common challenges faced by golfers, including limited access to professional equipment fitting, reliable equipment solutions and convenient service booking.
 
 The project is structured across **three development phases**, each building upon the previous to deliver a complete, production-ready web presence.
 
@@ -29,20 +26,20 @@ The project is structured across **three development phases**, each building upo
 #### Part 1: Building the Foundation *(Current Phase)*
 
 - Plan the project, including identifying the target audience, defining website goals, and producing a structured project plan
-- Conduct research and gather all required content, including text, service descriptions, product information, and partner details
+- Conduct research and gather all required content, including text, service descriptions, product information and partner details
 - Create the full HTML structure for all pages, including `<header>`, `<nav>`, `<main>`, `<section>`, and `<footer>` elements
 - Organise all project files and folders into a logical, maintainable directory structure
 
 #### Part 2: Designing the Visuals *(Upcoming)*
 
-- Apply comprehensive CSS styling, including layout design, typography choices, colour scheme implementation, and spacing
-- Implement a fully responsive design to ensure the website functions correctly across mobile, tablet, and desktop devices
-- Optimise the user experience through improved readability, intuitive navigation, consistent visual hierarchy, and accessibility considerations
+- Apply comprehensive CSS styling, including layout design, typography choices, colour scheme implementation and spacing
+- Implement a fully responsive design to ensure the website functions correctly across mobile, tablet and desktop devices
+- Optimise the user experience through improved readability, intuitive navigation, consistent visual hierarchy and accessibility considerations
 
 #### Part 3: Adding Functionality and SEO *(Upcoming)*
 
-- Implement JavaScript to introduce animations, interactive components, and dynamic user interface behaviour
-- Optimise all pages for search engine visibility through the use of relevant keywords, meta tags, structured data, and descriptive alt text on all images
+- Implement JavaScript to introduce animations, interactive components and dynamic user interface behaviour
+- Optimise all pages for search engine visibility through the use of relevant keywords, meta tags, structured data and descriptive alt text on all images
 - Build functional, validated forms for booking and service requests with client-side validation
 - Integrate external services such as Google Maps for location display and YouTube for embedded instructional content
 
@@ -54,9 +51,9 @@ The project is structured across **three development phases**, each building upo
 
 The Precision Golf Hub website is designed to achieve the following primary goals:
 
-- **Provide a centralised equipment service platform** — the website acts as a single hub where golfers can access club fitting, equipment consulting, ball personalisation, and repair services without visiting multiple providers
+- **Provide a centralised equipment service platform** — the website acts as a single hub where golfers can access club fitting, equipment consulting, ball personalisation and repair services without visiting multiple providers
 - **Increase accessibility to golf equipment services** — users can book services and submit requests online, eliminating the need to phone or visit in person
-- **Educate golfers about equipment** — the website includes guides, tips, and recommendations to help golfers make informed equipment decisions based on their skill level and playing style
+- **Educate golfers about equipment** — the website includes guides, tips and recommendations to help golfers make informed equipment decisions based on their skill level and playing style
 - **Facilitate partnerships with golf clubs** — the website showcases and integrates partner golf clubs and country clubs, allowing members to access services through the platform
 
 ### Key Performance Indicators (KPIs)
@@ -67,7 +64,7 @@ The Precision Golf Hub website is designed to achieve the following primary goal
 | **Service Bookings** | Number of club fitting appointments and service requests submitted via online forms |
 | **Custom Equipment Orders** | Number of personalised golf ball and equipment orders placed |
 | **Partner Golf Clubs** | Number of golf clubs and country clubs listed as active platform partners |
-| **User Engagement** | Average time spent on site, pages visited per session, and guide downloads |
+| **User Engagement** | Average time spent on site, pages visited per session and guide downloads |
 
 ---
 
@@ -76,15 +73,15 @@ The Precision Golf Hub website is designed to achieve the following primary goal
 ### Homepage (`index.html`)
 - Full introduction to Precision Golf Hub with a prominent hero section
 - Navigation menu linking to all main pages
-- Highlights of core services including club fitting, custom equipment, and coaching
+- Highlights of core services including club fitting, custom equipment and coaching
 - Call-to-action buttons directing users to booking and product pages
-- Featured content including current special offers, golf tips preview, and partner golf club listings
+- Featured content including current special offers, golf tips preview and partner golf club listings
 
 ### About Us Page (`about.html`)
 - Company history and founding story
 - Mission and vision statements
 - Value proposition explaining what makes the platform unique
-- Overview of core values: Precision, Integrity, and Growth
+- Overview of core values: Precision, Integrity and Growth
 - Team member profiles and partner brand listings
 
 ### Services Page (`services.html`)
@@ -97,27 +94,27 @@ The Precision Golf Hub website is designed to achieve the following primary goal
 - Direct links to the booking and enquiry form
 
 ### Products Page (`products.html`)
-- Full equipment catalogue organised by category: Drivers, Irons, Golf Balls, and Apparel
+- Full equipment catalogue organised by category: Drivers, Irons, Golf Balls and Apparel
 - Category filter bar for quick navigation to each product section
-- Individual product cards displaying brand, description, price, and Add to Cart button
+- Individual product cards displaying brand, description, price and Add to Cart button
 - Simulated shopping cart with example order summary and checkout form
 - Custom Golf Ball Ordering section with a personalisation form
 - Partner Clubs section listing all affiliated golf clubs with member discount information
 
 ### Booking / Enquiry Page (`enquiry.html`)
-- **Book a Fitting** form with fields for name, email, phone, fitting type, preferred location, partner club selection, preferred date, preferred time, and additional notes
-- **Service Request Form** for repairs, consulting, ball personalisation, and general enquiries
+- **Book a Fitting** form with fields for name, email, phone, fitting type, preferred location, partner club selection, preferred date, preferred time and additional notes
+- **Service Request Form** for repairs, consulting, ball personalisation and general enquiries
 - Booking confirmation section explaining the step-by-step process after form submission, including an example booking reference
 
 ### Contact Page (`contact.html`)
 - Full contact details including separate phone numbers and email addresses for all three locations
 - Trading hours displayed clearly
-- Social media links for Facebook, Instagram, and X (Twitter)
+- Social media links for Facebook, Instagram and X (Twitter)
 - Quick contact form for general messages
-- Three location cards for Johannesburg, Cape Town, and Durban, each with address, phone, email, hours, and a map placeholder
+- Three location cards for Johannesburg, Cape Town and Durban, each with address, phone, email, hours and a map placeholder
 
 ### Golf Tips and Guides Page (`tips.html`)
-- Articles and guides organised by category: Driving, Iron Play, Short Game, Putting, Course Management, and Fitness
+- Articles and guides organised by category: Driving, Iron Play, Short Game, Putting, Course Management and Fitness
 - Each tip includes practical advice and actionable bullet points
 - Newsletter subscription form for weekly tip delivery
 
@@ -125,7 +122,7 @@ The Precision Golf Hub website is designed to achieve the following primary goal
 - Current monthly promotions displayed in offer cards with original and discounted pricing
 - Equipment sale section showing clearance stock
 - Member loyalty perks section
-- Corporate golf day packages with three tiers: Bronze, Gold, and Platinum
+- Corporate golf day packages with three tiers: Bronze, Gold and Platinum
 - Terms and conditions for all active offers
 
 ### Navigation System
@@ -142,16 +139,16 @@ The Precision Golf Hub website is designed to achieve the following primary goal
 
 | Week | Phase | Activities | Milestone |
 |---|---|---|---|
-| Week 1 | Project Planning | Define project idea, objectives, target audience, and proposal structure | Project proposal completed |
+| Week 1 | Project Planning | Define project idea, objectives, target audience and proposal structure | Project proposal completed |
 | Week 2 | Research and Analysis | Competitor analysis, user needs assessment, content planning | Research section completed |
 | Week 3 | Design Phase | Create wireframes and plan page layouts | Wireframes completed |
 | Week 4 | **Part 1** — HTML Structure | Build full HTML structure for all pages and set up file organisation | All HTML pages created and linked |
-| Week 5 | **Part 2** — CSS Styling | Apply CSS styling, colour scheme, typography, and responsive layout | Styled and responsive website completed |
-| Week 6 | **Part 2** — UX Refinement | Refine layout, accessibility, spacing, and visual hierarchy | Polished visual design completed |
-| Week 7 | **Part 3** — JavaScript | Add interactivity, form validation, and animations | Interactive features completed |
-| Week 8 | **Part 3** — SEO and Integration | Implement SEO meta tags, alt text, Google Maps, and external services | Fully functional website completed |
+| Week 5 | **Part 2** — CSS Styling | Apply CSS styling, colour scheme, typography and responsive layout | Styled and responsive website completed |
+| Week 6 | **Part 2** — UX Refinement | Refine layout, accessibility, spacing and visual hierarchy | Polished visual design completed |
+| Week 7 | **Part 3** — JavaScript | Add interactivity, form validation and animations | Interactive features completed |
+| Week 8 | **Part 3** — SEO and Integration | Implement SEO meta tags, alt text, Google Maps and external services | Fully functional website completed |
 | Week 9 | Testing and Refinement | Cross-browser testing, mobile responsiveness testing, bug fixing | Tested and refined website |
-| Week 10 | Finalisation and Submission | Prepare final documentation, README, and submit | Final project submitted |
+| Week 10 | Finalisation and Submission | Prepare final documentation, README and submit | Final project submitted |
 
 ---
 
