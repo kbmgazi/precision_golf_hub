@@ -109,7 +109,6 @@ The Precision Golf Hub website is designed to achieve the following primary goal
 ### Contact Page (`contact.html`)
 - Full contact details including separate phone numbers and email addresses for all three locations
 - Trading hours displayed clearly
-- Social media links for Facebook, Instagram and X (Twitter)
 - Quick contact form for general messages
 - Three location cards for Johannesburg, Cape Town and Durban, each with address, phone, email, hours and a map placeholder
 
