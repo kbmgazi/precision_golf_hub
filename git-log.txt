@@ -1,3 +1,4 @@
+ca0c1ca Day 8: Updated and fix issues showed up in testing, therefore testing is complete
 a36966d Day 7: Upadeted enquiry.html
 8a42268 Day 7 : Completed tips.html . Therefore Part 1 is complete
 211e6e1 Day 5-6: Created contact.html; enquiry.html ; offer.html and products.html. Tips.html is work in progress
