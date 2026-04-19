@@ -171,7 +171,7 @@ All eight HTML pages have been created with complete, valid, semantic HTML5 stru
 - All HTML files are stored in the root directory for straightforward linking
 - The `css/` folder contains the single shared stylesheet `styles.css`
 - The `images/` folder is created and reserved for all photography and the sitemap image
-- A `snippets/` folder was used during development to isolate and test individual HTML components before integration
+
 
 ### Navigation Setup
 - A consistent navigation bar is included in the `<header>` of every page
