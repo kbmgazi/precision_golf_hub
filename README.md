@@ -134,7 +134,7 @@ The Precision Golf Hub website is designed to achieve the following primary goal
 
 # CSS Design and Styling Features
 
-The website now includes a fully implemented CSS styling system designed to create a modern, professional, and responsive user experience.
+The website now includes a fully implemented CSS styling system designed to create a modern, professional and responsive user experience.
 
 ---
 
@@ -181,7 +181,7 @@ All eight pages have been fully developed using semantic HTML5 structure.
 ---
 
 ### CSS Styling — Completed
-The entire website has been styled using a shared external stylesheet (`styles.css`) based on modern CSS principles.
+The entire website has been styled using a shared external stylesheet (`css/styles.css`) based on modern CSS principles.
 
 Key styling outcomes include:
 - Responsive layouts using flexible design techniques  
