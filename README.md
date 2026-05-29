@@ -6,10 +6,10 @@
 
 | Field | Details |
 |---|---|
-| **Full Name** | Keamohetse Biotshepo|
+| **Full Name** | Keamohetse Biotshepo Mgazi|
 | **Student Number** | ST10511607 |
 | **Module Name** | WEDE5020 |
-| **Submission Date** | 20 April 2025 |
+| **Submission Date** | 29 May 2025 |
 
 ---
 
@@ -132,6 +132,74 @@ The Precision Golf Hub website is designed to achieve the following primary goal
 
 ---
 
+# CSS Design and Styling Features
+
+The website now includes a fully implemented CSS styling system designed to create a modern, professional, and responsive user experience.
+
+---
+
+## Styling Features Implemented
+
+### Responsive Design
+- Mobile-friendly layouts  
+- Flexible sections and containers  
+- Responsive navigation menus  
+- Optimised scaling for different screen sizes  
+
+### Typography and Readability
+- Consistent font sizing and spacing  
+- Clear heading hierarchy  
+- Improved readability across all pages  
+
+### Visual Design
+- Golf-inspired colour palette  
+- Consistent button styling  
+- Card-based layouts for products and offers  
+- Styled forms and interactive elements  
+
+### User Experience Improvements
+- Hover effects on navigation links and buttons  
+- Improved content spacing and alignment  
+- Visual consistency across all pages  
+- Enhanced accessibility and usability  
+
+---
+
+## Navigation System
+- Consistent navigation bar included on all pages  
+- Active page highlighting using the `.active` CSS class  
+- Footer navigation available on every page  
+- Fully linked navigation system across all website pages  
+
+---
+
+## Completed Work Summary
+
+### HTML Structure — Completed
+All eight pages have been fully developed using semantic HTML5 structure.
+
+---
+
+### CSS Styling — Completed
+The entire website has been styled using a shared external stylesheet (`styles.css`) based on modern CSS principles.
+
+Key styling outcomes include:
+- Responsive layouts using flexible design techniques  
+- Consistent branding across all pages  
+- Improved navigation usability  
+- Styled forms and card-based components  
+- Mobile-first optimisation  
+- Clear visual hierarchy and spacing improvements  
+
+---
+
+### Navigation Setup — Completed
+- Linked navigation across all pages  
+- Active page indication implemented  
+- Footer navigation repeated consistently  
+
+---
+  
 ---
 
 ## Timeline and Milestones
@@ -204,6 +272,11 @@ The sitemap below illustrates the full page structure and hierarchy of the Preci
 ---
 
 ## Changelog
+/*CSS*/
+7143f77 Merge branch 'main' of https://github.com/kbmgazi/precision_golf_hub
+0568d85 Day 2: CSS  Tested and defect fixed
+6151bb3 Day 1: Started with CSS.
+/*HTML*/
 ca0c1ca Day 8: Updated and fix issues showed up in testing, therefore testing is complete
 a36966d Day 7: Upadeted enquiry.html
 8a42268 Day 7 : Completed tips.html . Therefore Part 1 is complete
@@ -261,6 +334,8 @@ The Pro Shop. (2026h) TaylorMade TP5x Golf Balls. Available at: https://www.thep
 The Pro Shop. (2026i) Titleist Pro V1 Golf Balls. Available at: https://www.theproshop.co.za/product/1004442-ball-men-titl-25-pro-v1 (Accessed: 19 April 2026).
 
 Titleist. (2026) TSR3 Driver. Available at: https://www.titleist.com/golf-clubs/drivers/tsr3 (Accessed: 19 April 2026).
+//css referencing 
+- W3Schools. (2025). *CSS Tutorial*. Available at: https://www.w3schools.com/css/ (Accessed: 1 May 2026).
 
 ---
 
