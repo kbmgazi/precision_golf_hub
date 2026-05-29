@@ -199,11 +199,38 @@ Key styling outcomes include:
 - Footer navigation repeated consistently  
 
 ---
-  
+
+
+  ## Testing and Testing Evidence
+---
+The website has undergone initial manual testing to ensure that all HTML and CSS components render correctly across different pages and screen sizes.
+
+### Testing Approach
+- Cross-page navigation testing to ensure all links function correctly
+- Responsive design testing using browser developer tools
+- Layout validation across mobile, tablet and desktop screen sizes
+- CSS inspection using browser developer tools to confirm styling consistency
+- Visual verification of typography, spacing and alignment
+
+### Testing Outcome
+- All pages load successfully without broken links
+- Responsive layout adjusts correctly across tested screen sizes
+- CSS styling is consistently applied across all pages
+- Navigation system remains functional and visually consistent
+
 ---
 
-## Timeline and Milestones
+## Testing Evidence Location
 
+All testing evidence (screenshots, validation results, and device testing outputs) can be found in the following directory:
+
+```plaintext
+/private/test_evidence_&_defect_report.pdf
+---
+
+
+## Timeline and Milestones
+---
 | Week | Phase | Activities | Milestone |
 |---|---|---|---|
 | Week 1 | Project Planning | Define project idea, objectives, target audience and proposal structure | Project proposal completed |
