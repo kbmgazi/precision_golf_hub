@@ -200,8 +200,7 @@ Key styling outcomes include:
 
 ---
 
-
-  ## Testing and Testing Evidence
+## Testing and Testing Evidence
 
 The website has undergone initial manual testing to ensure that all HTML and CSS components render correctly across different pages and screen sizes.
 
@@ -218,7 +217,7 @@ The website has undergone initial manual testing to ensure that all HTML and CSS
 - CSS styling is consistently applied across all pages
 - Navigation system remains functional and visually consistent
 
----
+
 
 ## Testing Evidence Location
 
@@ -244,7 +243,7 @@ All testing evidence (screenshots, validation results, and device testing output
 | Week 9 | Testing and Refinement | Cross-browser testing, mobile responsiveness testing, bug fixing | Tested and refined website |
 | Week 10 | Finalisation and Submission | Prepare final documentation, README and submit | Final project submitted |
 
----
+
 
 ## Part 1 Details — Completed Work
 
@@ -296,7 +295,7 @@ The sitemap below illustrates the full page structure and hierarchy of the Preci
 | Golf Tips and Guides | *(standalone page)* |
 | Special Offers | *(standalone page)* |
 
----
+
 
 ## Changelog
 ### *CSS*
