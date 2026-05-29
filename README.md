@@ -8,7 +8,7 @@
 |---|---|
 | **Full Name** | Keamohetse Biotshepo|
 | **Student Number** | ST10511607 |
-| **Course / Module Name** | WEDE5020 |
+| **Module Name** | WEDE5020 |
 | **Submission Date** | 20 April 2025 |
 
 ---
@@ -109,7 +109,6 @@ The Precision Golf Hub website is designed to achieve the following primary goal
 ### Contact Page (`contact.html`)
 - Full contact details including separate phone numbers and email addresses for all three locations
 - Trading hours displayed clearly
-- Social media links for Facebook, Instagram and X (Twitter)
 - Quick contact form for general messages
 - Three location cards for Johannesburg, Cape Town and Durban, each with address, phone, email, hours and a map placeholder
 
@@ -172,7 +171,7 @@ All eight HTML pages have been created with complete, valid, semantic HTML5 stru
 - All HTML files are stored in the root directory for straightforward linking
 - The `css/` folder contains the single shared stylesheet `styles.css`
 - The `images/` folder is created and reserved for all photography and the sitemap image
-- A `snippets/` folder was used during development to isolate and test individual HTML components before integration
+
 
 ### Navigation Setup
 - A consistent navigation bar is included in the `<header>` of every page
