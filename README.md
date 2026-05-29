@@ -202,7 +202,7 @@ Key styling outcomes include:
 
 
   ## Testing and Testing Evidence
----
+
 The website has undergone initial manual testing to ensure that all HTML and CSS components render correctly across different pages and screen sizes.
 
 ### Testing Approach
@@ -225,8 +225,8 @@ The website has undergone initial manual testing to ensure that all HTML and CSS
 All testing evidence (screenshots, validation results, and device testing outputs) can be found in the following directory:
 
 ```plaintext
-/private/test_evidence_&_defect_report.pdf
----
+/private/test_evidence_defect_report.pdf
+
 
 
 ## Timeline and Milestones
