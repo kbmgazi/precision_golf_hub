@@ -272,11 +272,11 @@ The sitemap below illustrates the full page structure and hierarchy of the Preci
 ---
 
 ## Changelog
-/*CSS*/
+###*CSS*
 7143f77 Merge branch 'main' of https://github.com/kbmgazi/precision_golf_hub
 0568d85 Day 2: CSS  Tested and defect fixed
 6151bb3 Day 1: Started with CSS.
-/*HTML*/
+###*HTML*
 ca0c1ca Day 8: Updated and fix issues showed up in testing, therefore testing is complete
 a36966d Day 7: Upadeted enquiry.html
 8a42268 Day 7 : Completed tips.html . Therefore Part 1 is complete
