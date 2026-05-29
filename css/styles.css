@@ -839,7 +839,7 @@ form{
 
 .form_row input[type="text"],
 .form_row input[type="email"],
-.form_row input[type="tel"]
+.form_row input[type="tel"],
 .form_row input[type="date"] {
     width: 100%;
     padding : 1.1rem 1.4rem;
