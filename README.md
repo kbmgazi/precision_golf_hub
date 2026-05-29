@@ -15,7 +15,7 @@
 
 ## Project Overview
 
-Precision Golf Hub is a fictional South African sports technology and equipment service company, founded in March 2024. The organisation was created to address common challenges faced by golfers, including limited access to professional equipment fitting, reliable equipment solutions and convenient service booking.
+Precision Golf Hub is a fictional South African sports technology and equipment service company, founded in March 2024. The organisation was created to address common challenges faced by golfers.
 
 The project is structured across **three development phases**, each building upon the previous to deliver a complete, production-ready web presence.
 
@@ -23,14 +23,14 @@ The project is structured across **three development phases**, each building upo
 
 ### Phase Breakdown
 
-#### Part 1: Building the Foundation *(Current Phase)*
+#### Part 1: Building the Foundation *(Completed)*
 
 - Plan the project, including identifying the target audience, defining website goals, and producing a structured project plan
 - Conduct research and gather all required content, including text, service descriptions, product information and partner details
 - Create the full HTML structure for all pages, including `<header>`, `<nav>`, `<main>`, `<section>`, and `<footer>` elements
 - Organise all project files and folders into a logical, maintainable directory structure
 
-#### Part 2: Designing the Visuals *(Upcoming)*
+#### Part 2: Designing the Visuals *(Completed)*
 
 - Apply comprehensive CSS styling, including layout design, typography choices, colour scheme implementation and spacing
 - Implement a fully responsive design to ensure the website functions correctly across mobile, tablet and desktop devices
@@ -51,7 +51,7 @@ The project is structured across **three development phases**, each building upo
 
 The Precision Golf Hub website is designed to achieve the following primary goals:
 
-- **Provide a centralised equipment service platform** — the website acts as a single hub where golfers can access club fitting, equipment consulting, ball personalisation and repair services without visiting multiple providers
+- **Provide a centralised equipment service platform** — the website acts as a single hub where golfers can access club fitting, equipment consulting, ball personalisation and repair services
 - **Increase accessibility to golf equipment services** — users can book services and submit requests online, eliminating the need to phone or visit in person
 - **Educate golfers about equipment** — the website includes guides, tips and recommendations to help golfers make informed equipment decisions based on their skill level and playing style
 - **Facilitate partnerships with golf clubs** — the website showcases and integrates partner golf clubs and country clubs, allowing members to access services through the platform
@@ -217,19 +217,18 @@ The website has undergone initial manual testing to ensure that all HTML and CSS
 - CSS styling is consistently applied across all pages
 - Navigation system remains functional and visually consistent
 
-
-
 ## Testing Evidence Location
 
 All testing evidence (screenshots, validation results, and device testing outputs) can be found in the following directory:
 
 ```plaintext
 /private/test_evidence_defect_report.pdf
+```
 
-
+---
 
 ## Timeline and Milestones
----
+
 | Week | Phase | Activities | Milestone |
 |---|---|---|---|
 | Week 1 | Project Planning | Define project idea, objectives, target audience and proposal structure | Project proposal completed |
@@ -243,7 +242,7 @@ All testing evidence (screenshots, validation results, and device testing output
 | Week 9 | Testing and Refinement | Cross-browser testing, mobile responsiveness testing, bug fixing | Tested and refined website |
 | Week 10 | Finalisation and Submission | Prepare final documentation, README and submit | Final project submitted |
 
-
+---
 
 ## Part 1 Details — Completed Work
 
@@ -266,7 +265,6 @@ All eight HTML pages have been created with complete, valid, semantic HTML5 stru
 - The `css/` folder contains the single shared stylesheet `styles.css`
 - The `images/` folder is created and reserved for all photography and the sitemap image
 
-
 ### Navigation Setup
 - A consistent navigation bar is included in the `<header>` of every page
 - All eight pages are linked in every navigation menu
@@ -277,10 +275,9 @@ All eight HTML pages have been created with complete, valid, semantic HTML5 stru
 
 ## Sitemap
 
-The sitemap below illustrates the full page structure and hierarchy of the Precision Golf Hub website. Each main page is shown with its corresponding sub-sections, reflecting the content implemented in Part 1.
+The sitemap below illustrates the full page structure and hierarchy of the Precision Golf Hub website. Each main page is shown with its corresponding sub-sections, reflecting the content implemented.
 
 ![Precision Golf Hub Sitemap](images/sitemap.png)
-
 
 ### Sitemap Summary
 
@@ -295,23 +292,27 @@ The sitemap below illustrates the full page structure and hierarchy of the Preci
 | Golf Tips and Guides | *(standalone page)* |
 | Special Offers | *(standalone page)* |
 
-
+---
 
 ## Changelog
-### *CSS*
-7143f77 Merge branch 'main' of https://github.com/kbmgazi/precision_golf_hub
-0568d85 Day 2: CSS  Tested and defect fixed
-6151bb3 Day 1: Started with CSS.
-### *HTML*
-ca0c1ca Day 8: Updated and fix issues showed up in testing, therefore testing is complete
-a36966d Day 7: Upadeted enquiry.html
-8a42268 Day 7 : Completed tips.html . Therefore Part 1 is complete
-211e6e1 Day 5-6: Created contact.html; enquiry.html ; offer.html and products.html. Tips.html is work in progress
-65521b7 Day 4:Updated index.html , about.html & services.html
-7046ded Day 3:Completed service.html ; Created enquiry.html still work in progress
-db9b6a2 Day 3:Created services.html ; still work in progress.
-1329d34 Day 2: Created about.html page and completed
-e341c5f Day 1: Project structure and HTML file creation
+
+### CSS
+- 7143f77 Merge branch 'main' of https://github.com/kbmgazi/precision_golf_hub
+- 0568d85 Day 2: CSS Tested and defect fixed
+- 6151bb3 Day 1: Started with CSS.
+
+### HTML
+- ca0c1ca Day 8: Updated and fix issues showed up in testing, therefore testing is complete
+- a36966d Day 7: Updated enquiry.html
+- 8a42268 Day 7: Completed tips.html. Therefore Part 1 is complete
+- 211e6e1 Day 5-6: Created contact.html; enquiry.html; offer.html and products.html. Tips.html is work in progress
+- 65521b7 Day 4: Updated index.html, about.html & services.html
+- 7046ded Day 3: Completed service.html; Created enquiry.html still work in progress
+- db9b6a2 Day 3: Created services.html; still work in progress.
+- 1329d34 Day 2: Created about.html page and completed
+- e341c5f Day 1: Project structure and HTML file creation
+
+---
 
 ## References
 
@@ -360,8 +361,8 @@ The Pro Shop. (2026h) TaylorMade TP5x Golf Balls. Available at: https://www.thep
 The Pro Shop. (2026i) Titleist Pro V1 Golf Balls. Available at: https://www.theproshop.co.za/product/1004442-ball-men-titl-25-pro-v1 (Accessed: 19 April 2026).
 
 Titleist. (2026) TSR3 Driver. Available at: https://www.titleist.com/golf-clubs/drivers/tsr3 (Accessed: 19 April 2026).
-//css referencing 
-- W3Schools. (2025). *CSS Tutorial*. Available at: https://www.w3schools.com/css/ (Accessed: 1 May 2026).
+
+W3Schools. (2025) *CSS Tutorial*. Available at: https://www.w3schools.com/css/ (Accessed: 1 May 2026).
 
 ---
 
