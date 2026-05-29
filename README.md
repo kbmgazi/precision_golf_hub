@@ -200,9 +200,9 @@ Key styling outcomes include:
 
 ---
 
----
-  ## Testing and Testing Evidence
 
+  ## Testing and Testing Evidence
+---
 The website has undergone initial manual testing to ensure that all HTML and CSS components render correctly across different pages and screen sizes.
 
 ### Testing Approach
@@ -228,9 +228,9 @@ All testing evidence (screenshots, validation results, and device testing output
 /private/test_evidence_&_defect_report.pdf
 ---
 
----
-## Timeline and Milestones
 
+## Timeline and Milestones
+---
 | Week | Phase | Activities | Milestone |
 |---|---|---|---|
 | Week 1 | Project Planning | Define project idea, objectives, target audience and proposal structure | Project proposal completed |
