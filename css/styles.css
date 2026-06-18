@@ -319,6 +319,73 @@ nav ul li a.active {
     font-weight: 600;
 }
 
+/*sticky nav state*/
+header.scrolled {
+    box-shadow: var(--shadow-md);
+    padding: var(--space-md) 0;
+}
+
+header.scrolled h1 {
+    font-size: var(--text-lg);
+}
+
+header.scrolled img {
+    max-width: 80px;
+    height: 80px;
+}
+
+header.scrolled p {
+    display: none;
+}
+
+/*back to top button*/
+#back-to-top {
+    position: fixed;
+    bottom: -60px;
+    right: var(--space-lg);
+    width: 50px;
+    height: 50px;
+    background-color: var(--gold);
+    color: var(--green);
+    border: 2px solid var(--gold);
+    border-radius: 50%;
+    font-family: var(--font-body);
+    font-size: var(--text-sm);
+    font-weight: 700;
+    cursor: pointer;
+    transition: bottom var(--transition), background-color var(--transition), transform var(--transition-fast);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    line-height: 1;
+}
+
+#back-to-top:hover {
+    background-color: var(--gold-light);
+    transform: translateY(-3px);
+}
+
+#back-to-top:active {
+    transform: translateY(-1px);
+}
+
+#back-to-top.show {
+    bottom: var(--space-lg);
+}
+
+/*scroll animations*/
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.animate-on-scroll.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /*main content*/
 main {
     max-width: var(--max-w);
@@ -942,6 +1009,110 @@ form{
     outline-offset: 3px;
 }
 
+/*accordion*/
+.accordion {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.accordion-item {
+    background-color: var(--bg-section);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow var(--transition), border-color var(--transition);
+}
+
+.accordion-item:hover {
+    box-shadow: var(--shadow-md);
+    border-color: var(--gold);
+}
+
+.accordion-header {
+    width: 100%;
+    padding: var(--space-lg) var(--space-xl);
+    background-color: var(--bg-section);
+    border: none;
+    font-family: var(--font-body);
+    font-size: var(--text-lg);
+    font-weight: 600;
+    color: var(--green);
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color var(--transition), color var(--transition);
+}
+
+.accordion-header:hover {
+    background-color: var(--bg-alt);
+    color: var(--gold);
+}
+
+.accordion-header:focus-visible {
+    outline: 3px solid var(--gold);
+    outline-offset: -3px;
+}
+
+.accordion-header[aria-expanded="true"] {
+    background-color: var(--green);
+    color: var(--white);
+    border-bottom: 2px solid var(--gold);
+}
+
+.accordion-header[aria-expanded="true"] .accordion-icon {
+    color: var(--gold);
+    transform: rotate(45deg);
+}
+
+.accordion-icon {
+    font-size: var(--text-xl);
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.4rem;
+    height: 2.4rem;
+    transition: transform var(--transition);
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height var(--transition);
+}
+
+.accordion-content.show {
+    max-height: 2000px;
+}
+
+.accordion-body {
+    padding: var(--space-lg) var(--space-xl);
+    color: var(--text-mid);
+    line-height: 1.8;
+}
+
+.accordion-body h3 {
+    margin-top: var(--space-lg);
+    margin-bottom: var(--space-sm);
+}
+
+.accordion-body ul {
+    margin-left: var(--space-lg);
+    margin-bottom: var(--space-md);
+}
+
+.accordion-body li {
+    margin-bottom: var(--space-xs);
+}
+
+.accordion-body .button {
+    margin-top: var(--space-md);
+}
+
 /*contact details*/
 .contact_details {
     background-color: var(--bg-page);
@@ -984,6 +1155,255 @@ iframe {
     min-height: 35rem;
 }
 
+/*lightbox gallery*/
+.lightbox-trigger {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    transition: transform var(--transition-fast);
+}
+
+.lightbox-trigger:hover {
+    transform: scale(1.05);
+}
+
+.lightbox-trigger::after {
+    content: '🔍';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    opacity: 0;
+    transition: opacity var(--transition);
+    z-index: 10;
+    background-color: rgba(201, 160, 38, 0.8);
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox-trigger:hover::after {
+    opacity: 1;
+}
+
+.lightbox-trigger:hover::after {
+    opacity: 1;
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2000;
+}
+
+.lightbox.show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1;
+}
+
+.lightbox-container {
+    position: relative;
+    max-width: 90vw;
+    max-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-xl);
+    z-index: 2;
+    flex-direction: column;
+}
+
+.lightbox-image {
+    max-width: 100%;
+    max-height: 70vh;
+    object-fit: contain;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-lg);
+}
+
+.lightbox-close {
+    position: absolute;
+    top: var(--space-lg);
+    right: var(--space-lg);
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--gold);
+    color: var(--green);
+    border: none;
+    border-radius: 50%;
+    font-size: 3.2rem;
+    font-weight: 300;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color var(--transition), transform var(--transition-fast);
+    z-index: 3;
+}
+
+.lightbox-close:hover {
+    background-color: var(--gold-light);
+    transform: scale(1.1);
+}
+
+.lightbox-prev,
+.lightbox-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(201, 160, 38, 0.8);
+    color: var(--green);
+    border: none;
+    width: 5rem;
+    height: 5rem;
+    font-size: 2.4rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-md);
+    transition: background-color var(--transition);
+    z-index: 3;
+}
+
+.lightbox-prev:hover,
+.lightbox-next:hover {
+    background-color: var(--gold);
+}
+
+.lightbox-prev {
+    left: var(--space-lg);
+}
+
+.lightbox-next {
+    right: var(--space-lg);
+}
+
+.lightbox-caption {
+    color: var(--white);
+    font-size: var(--text-base);
+    text-align: center;
+    margin-top: var(--space-md);
+    max-width: 80vw;
+}
+
+/*products filter*/
+[data-filter] {
+    transition: all var(--transition);
+}
+
+[data-filter].active {
+    background-color: var(--green) !important;
+    color: white !important;
+    border-color: var(--green) !important;
+}
+
+[data-filter]:not(.active):hover {
+    border-color: var(--green) !important;
+    color: var(--green) !important;
+}
+
+#product_search {
+    transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+#product_search:focus {
+    border-color: var(--gold) !important;
+    box-shadow: 0 0 0 3px rgba(26, 92, 52, 0.15);
+    outline: none;
+}
+
+/*form validation*/
+input[style*="border-color: var(--text-danger)"],
+textarea[style*="border-color: var(--text-danger)"],
+select[style*="border-color: var(--text-danger)"] {
+    border-color: var(--text-danger) !important;
+}
+
+#form_message {
+    animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*leaflet maps*/
+.leaflet-container {
+    background-color: var(--bg-alt);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+}
+
+.map-popup-wrapper .leaflet-popup-content-wrapper {
+    background-color: var(--white);
+    border: 2px solid var(--gold);
+    border-radius: var(--radius-md);
+}
+
+.map-popup-wrapper .leaflet-popup-tip {
+    background-color: var(--white);
+    border-top-color: var(--gold);
+}
+
+.map-popup {
+    font-family: var(--font-body);
+    font-size: var(--text-sm);
+    color: var(--text-mid);
+}
+
+.map-popup h4 {
+    color: var(--green);
+    margin-bottom: var(--space-sm);
+    font-size: var(--text-lg);
+}
+
+.map-popup p {
+    margin-bottom: var(--space-sm);
+    font-size: var(--text-sm);
+}
+
+.map-popup a {
+    color: var(--green);
+    text-decoration: underline;
+}
+
+.map-popup a:hover {
+    color: var(--gold);
+}
+
+.leaflet-control-attribution {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: var(--text-mid);
+}
+
 /*responsive design*/
 
 /*tablets*/
@@ -992,9 +1412,71 @@ iframe {
         padding: var(--space-xl) var(--space-lg);
     }
 
+    /* Accordion - Tablet */
+    .accordion-header {
+        padding: var(--space-md) var(--space-lg);
+        font-size: var(--text-md);
+    }
+
+    .accordion-body {
+        padding: var(--space-md) var(--space-lg);
+    }
+
     section {
         padding: var(--space-xl);
     }
+
+    /* Typography - tablet scale (85% of desktop) */
+    h1 {
+        font-size: 3.74rem;
+        line-height: 1.2;
+    }
+    h2 {
+        font-size: 3.06rem;
+        line-height: 1.2;
+    }
+    h3 {
+        font-size: 2.38rem;
+        line-height: 1.3;
+    }
+    h4 {
+        font-size: 1.87rem;
+        line-height: 1.3;
+    }
+    body, p {
+        font-size: 1.36rem;
+        line-height: 1.7;
+    }
+    section ul,
+    section ol {
+        font-size: 1.36rem;
+        line-height: 1.7;
+    }
+    nav ul li a {
+        font-size: 1.19rem;
+    }
+    .button, .button_gold, .form_submit {
+        font-size: 1.19rem;
+    }
+    .card h3 {
+        font-size: 1.87rem;
+    }
+    .card p {
+        font-size: 1.19rem;
+    }
+    .product h3 {
+        font-size: 1.53rem;
+    }
+    .offer h3 {
+        font-size: 1.87rem;
+    }
+    .tip h3 {
+        font-size: 1.53rem;
+    }
+    .partner h3 {
+        font-size: 1.53rem;
+    }
+
     .partner_grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1002,18 +1484,44 @@ iframe {
         gap: var(--space-lg);
     }
     .hero h2 {
-        font-size: var(--text-2xl);
+        font-size: 3.06rem;
+        line-height: 1.2;
+    }
+    .hero p {
+        font-size: 1.53rem;
+        line-height: 1.6;
     }
     header h1 {
-        font-size: var(--text-xl);
+        font-size: 2.38rem;
+        line-height: 1.2;
+    }
+    footer h3 {
+        font-size: 2.38rem;
+        line-height: 1.2;
+    }
+    footer > p {
+        font-size: 1.19rem;
+        line-height: 1.6;
+    }
+    footer > ul li a {
+        font-size: 1.19rem;
+    }
+    .form_row label {
+        font-size: 1.19rem;
+    }
+    .form_row input[type="text"],
+    .form_row input[type="email"],
+    .form_row input[type="tel"],
+    .form_row input[type="date"],
+    .form_row select,
+    .form_row textarea {
+        font-size: 1.36rem;
+        line-height: 1.5;
     }
 }
 
 /*mobile*/
 @media (max-width: 767px) {
-    html {
-        font-size: 57%;
-    }
     header {
         padding: var(--space-lg) var(--space-md);
     }
@@ -1021,10 +1529,55 @@ iframe {
         max-width: 80px;
         height: 80px;
     }
-    header h1 {
-        font-size: var(--text-lg);
+
+    /* Accordion - Mobile */
+    .accordion {
+        gap: var(--space-sm);
     }
 
+    .accordion-header {
+        padding: var(--space-md) var(--space-lg);
+        font-size: var(--text-md);
+    }
+
+    .accordion-body {
+        padding: var(--space-md) var(--space-lg);
+    }
+
+    /* Typography - mobile scale (70% of desktop) */
+    h1 {
+        font-size: 3.08rem;
+        line-height: 1.2;
+    }
+    h2 {
+        font-size: 2.52rem;
+        line-height: 1.2;
+    }
+    h3 {
+        font-size: 1.96rem;
+        line-height: 1.3;
+    }
+    h4 {
+        font-size: 1.54rem;
+        line-height: 1.3;
+    }
+    h5, h6 {
+        font-size: 1.4rem;
+        line-height: 1.3;
+    }
+    body, p {
+        font-size: 1.12rem;
+        line-height: 1.65;
+    }
+    section ul,
+    section ol {
+        font-size: 1.12rem;
+        line-height: 1.65;
+    }
+    strong {
+        font-weight: 700;
+        color: var(--text-dark);
+    }
     nav ul {
         flex-direction: column;
         align-items: stretch;
@@ -1037,6 +1590,7 @@ iframe {
         border-right: none;
         text-align: center;
         border-bottom-width: 1px;
+        font-size: 0.98rem;
     }
 
     nav ul li :last-child a {
@@ -1058,9 +1612,10 @@ iframe {
         border-radius: var(--radius-sm);
     }
 
-    h1{font-size: var(--text-xl);}
-    h2{font-size: var(--text-lg);}
-    h3{font-size: var(--text-md);}
+    header h1 {
+        font-size: 2.1rem;
+        line-height: 1.2;
+    }
 
     .img_hero {
         max-height: 25rem;
@@ -1069,10 +1624,12 @@ iframe {
         padding: var(--space-xl) var(--space-lg);
     }
     .hero h2 {
-        font-size: var(--text-xl);
+        font-size: 2.52rem;
+        line-height: 1.2;
     }
     .hero p {
-        font-size: var(--text-base);
+        font-size: 1.12rem;
+        line-height: 1.65;
     }
 
     .stats_bar {
@@ -1081,7 +1638,19 @@ iframe {
         padding: var(--space-xl) var(--space-md);
     }
     .stat_item strong {
-        font-size: var(--text-2xl);
+        font-size: 2.52rem;
+        line-height: 1;
+    }
+    .stat_item span {
+        font-size: 0.84rem;
+    }
+
+    .card,
+    .offer,
+    .product,
+    .tip,
+    .partner {
+        padding: var(--space-lg);
     }
 
     .card_grid,
@@ -1092,33 +1661,128 @@ iframe {
         grid-template-columns: 1fr;
     }
 
+    .card h3 {
+        font-size: 1.54rem;
+        line-height: 1.3;
+    }
+    .card p {
+        font-size: 0.98rem;
+        line-height: 1.6;
+    }
+    .card ul li {
+        font-size: 0.98rem;
+    }
+
+    .product h3 {
+        font-size: 1.26rem;
+        line-height: 1.3;
+    }
+    .product a:not(.button) {
+        font-size: 0.98rem;
+    }
+    .brand {
+        font-size: 0.84rem;
+    }
+    .price {
+        font-size: 1.96rem;
+        line-height: 1.2;
+    }
+
+    .offer h3 {
+        font-size: 1.54rem;
+        line-height: 1.3;
+    }
+    .offer p {
+        font-size: 0.98rem;
+    }
+    .old_price {
+        font-size: 0.98rem;
+    }
+    .new_price {
+        font-size: 1.96rem;
+    }
+
+    .category {
+        font-size: 0.84rem;
+    }
+    .tip h3 {
+        font-size: 1.26rem;
+        line-height: 1.3;
+    }
+    .tip h4 {
+        font-size: 1.12rem;
+        line-height: 1.3;
+    }
+    .tip p {
+        font-size: 0.98rem;
+    }
+    .tip ul li {
+        font-size: 0.98rem;
+    }
+
+    .partner h3 {
+        font-size: 1.26rem;
+        line-height: 1.3;
+    }
+    .partner p {
+        font-size: 0.98rem;
+        line-height: 1.6;
+    }
+
     .button,
     .button_gold,
     .form_submit {
         display: block;
         width: 100%;
         text-align: center;
+        font-size: 0.98rem;
     }
 
     .contact_details {
         padding: var(--space-md);
+        font-size: 1.12rem;
+        line-height: 1.65;
+    }
+    .contact_details strong {
+        font-size: 0.84rem;
     }
 
     footer {
         padding: var(--space-xl) var(--space-md);
     }
+    footer h3 {
+        font-size: 1.96rem;
+        line-height: 1.2;
+    }
+    footer > p {
+        font-size: 0.98rem;
+        line-height: 1.6;
+    }
     footer > ul {
         flex-direction: column;
         align-items: center;
     }
+    footer > ul li a {
+        font-size: 0.98rem;
+    }
+    .footer_bottom {
+        font-size: 0.84rem;
+    }
 
+    .form_row label {
+        font-size: 0.98rem;
+    }
     .form_row input[type="text"],
     .form_row input[type="email"],
     .form_row input[type="tel"],
     .form_row input[type="date"],
     .form_row select,
     .form_row textarea {
-        font-size: var(--text-base);
+        font-size: 1.12rem;
+        line-height: 1.5;
+    }
+    .form_row p {
+        font-size: 0.84rem;
     }
 
     iframe {
@@ -1129,10 +1793,6 @@ iframe {
     /*small mobile*/
     @media (max-width: 480px) {
 
-        html {
-            font-size: 54%;
-        }
-
         main {
             padding: var(--space-sm);
         }
@@ -1140,11 +1800,88 @@ iframe {
         section {
             padding: var(--space-md);
         }
+
+        /* Accordion - Small Mobile */
+        .accordion {
+            gap: var(--space-xs);
+        }
+
+        .accordion-header {
+            padding: var(--space-md) var(--space-lg);
+            font-size: var(--text-base);
+        }
+
+        .accordion-body {
+            padding: var(--space-md) var(--space-lg);
+        }
+
+        /* Typography - small mobile scale (60% of desktop) */
+        h1 {
+            font-size: 2.64rem;
+            line-height: 1.2;
+        }
+        h2 {
+            font-size: 2.16rem;
+            line-height: 1.2;
+        }
+        h3 {
+            font-size: 1.68rem;
+            line-height: 1.3;
+        }
+        h4 {
+            font-size: 1.32rem;
+            line-height: 1.3;
+        }
+        h5, h6 {
+            font-size: 1.2rem;
+            line-height: 1.3;
+        }
+        body, p {
+            font-size: 0.96rem;
+            line-height: 1.6;
+        }
+        section ul,
+        section ol {
+            font-size: 0.96rem;
+            line-height: 1.6;
+        }
+        nav ul li a {
+            font-size: 0.84rem;
+        }
+        .button, .button_gold, .form_submit {
+            font-size: 0.84rem;
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            line-height: 1.2;
+        }
+        header img {
+            max-width: 60px;
+            height: 60px;
+        }
+
         .hero {
             padding: var(--space-lg) var(--space-md);
         }
         .hero h2 {
-            font-size: var(--text-lg);
+            font-size: 2.16rem;
+            line-height: 1.2;
+        }
+        .hero p {
+            font-size: 0.96rem;
+            line-height: 1.6;
+        }
+
+        .stats_bar {
+            padding: var(--space-lg) var(--space-md);
+        }
+        .stats_item strong {
+            font-size: 2.16rem;
+            line-height: 1;
+        }
+        .stats_item span {
+            font-size: 0.72rem;
         }
 
         .card,
@@ -1155,16 +1892,106 @@ iframe {
             padding: var(--space-lg);
         }
 
-         header h1 {
-            font-size: var(--text-md);
+        .card h3 {
+            font-size: 1.32rem;
+            line-height: 1.3;
         }
-        header img {
-            max-width: 60px;
-            height: 60px;
+        .card p {
+            font-size: 0.84rem;
+            line-height: 1.6;
+        }
+        .card ul li {
+            font-size: 0.84rem;
         }
 
-        .stats_item strong {
-            font-size: var(--text-xl);
+        .product h3 {
+            font-size: 1.08rem;
+            line-height: 1.3;
+        }
+        .brand {
+            font-size: 0.72rem;
+        }
+        .price {
+            font-size: 1.68rem;
+        }
+        .product a:not(.button) {
+            font-size: 0.84rem;
+        }
+
+        .offer h3 {
+            font-size: 1.32rem;
+        }
+        .offer p {
+            font-size: 0.84rem;
+        }
+        .old_price {
+            font-size: 0.84rem;
+        }
+        .new_price {
+            font-size: 1.68rem;
+        }
+
+        .category {
+            font-size: 0.72rem;
+        }
+        .tip h3 {
+            font-size: 1.08rem;
+        }
+        .tip h4 {
+            font-size: 0.96rem;
+            line-height: 1.3;
+        }
+        .tip p {
+            font-size: 0.84rem;
+        }
+        .tip ul li {
+            font-size: 0.84rem;
+        }
+
+        .partner h3 {
+            font-size: 1.08rem;
+        }
+        .partner p {
+            font-size: 0.84rem;
+        }
+
+        footer h3 {
+            font-size: 1.68rem;
+            line-height: 1.2;
+        }
+        footer > p {
+            font-size: 0.84rem;
+            line-height: 1.6;
+        }
+        footer > ul li a {
+            font-size: 0.84rem;
+        }
+        .footer_bottom {
+            font-size: 0.72rem;
+        }
+
+        .contact_details {
+            font-size: 0.96rem;
+            line-height: 1.6;
+        }
+        .contact_details strong {
+            font-size: 0.72rem;
+        }
+
+        .form_row label {
+            font-size: 0.84rem;
+        }
+        .form_row input[type="text"],
+        .form_row input[type="email"],
+        .form_row input[type="tel"],
+        .form_row input[type="date"],
+        .form_row select,
+        .form_row textarea {
+            font-size: 0.96rem;
+            line-height: 1.5;
+        }
+        .form_row p {
+            font-size: 0.72rem;
         }
 
         iframe {

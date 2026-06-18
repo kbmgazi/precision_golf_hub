@@ -4,8 +4,27 @@
     <!--Basic browser info-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Precision Golf Hub - Golf equipment, club fitting , coaching and more">
-    <title>Precision Golf Hub | Booking & Enquiry</title>
+    <meta name="description" content="Book a Golf Fitting or Service - Submit your enquiry to Precision Golf Hub for professional club fitting, coaching, equipment, or repairs.">
+    <meta name="keywords" content="golf fitting booking, golf coaching booking, equipment enquiry, golf services booking, Trackman fitting">
+    <meta name="author" content="Precision Golf Hub">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://precisiongolfhub.co.za/enquiry.html">
+    
+    <!--Open Graph-->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Book Golf Fitting, Coaching & Services">
+    <meta property="og:description" content="Submit your enquiry for professional golf fitting, coaching, equipment, or repair services.">
+    <meta property="og:url" content="https://precisiongolfhub.co.za/enquiry.html">
+    <meta property="og:image" content="https://precisiongolfhub.co.za/images/golf-header.jpg">
+    <meta property="og:site_name" content="Precision Golf Hub">
+    
+    <!--Twitter Card-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Book Golf Fitting, Coaching & Services">
+    <meta name="twitter:description" content="Get in touch with Precision Golf Hub to book your golf fitting or inquire about our services.">
+    <meta name="twitter:image" content="https://precisiongolfhub.co.za/images/golf-header.jpg">
+    
+    <title>Booking & Enquiry Form | Precision Golf Hub</title>
 
     <!--css link-->
     <link rel="stylesheet" href="css/styles.css">
@@ -56,17 +75,14 @@
             </ul>
 
             <!--Fitting booking form-->
-            <form action="" method="post">
-                <!--first name-->
+            <form id="enquiry_form" action="" method="post">
+                <!--form message container-->
+                <div id="form_message" style="display: none;"></div>
+                
+                <!--Full name-->
                 <div class="form_row">
-                    <label for="first_name">First Name</label>
-                    <input type="text" name="first_name" id="first_name" placeholder="Enter your first name" required>
-                </div>
-
-                <!--last name-->
-                <div class="form_row">
-                    <label for="last_name">Last Name</label>
-                    <input type="text" name="last_name" id="last_name" placeholder="Enter your last name" required>
+                    <label for="name">Full Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your full name" required>
                 </div>
 
                 <!--Email address-->
@@ -78,18 +94,21 @@
                 <!--Phone number-->
                 <div class="form_row">
                     <label for="phone">Phone Number</label>
-                    <input type="tel" name="phone" id="phone" placeholder="e.g. 082 909 8750" required>
+                    <input type="tel" name="phone" id="phone" placeholder="e.g. +27 82 909 8750" required>
                 </div>
 
-                <!--fitting type dropdown-->
+                <!--Service selection-->
                 <div class="form_row">
-                    <label for="fitting_type">Fitting Type</label>
-                    <select name="fitting_type" id="fitting_type">
-                        <option value="">-- Please choose a fitting type --</option>
-                        <option value="full_bag">Full Bag Fitting - R999</option>
-                        <option value="single_club">Single Club Fitting - R450</option>
-                        <option value="driver">Driver Only Fitting - R499</option>
-                        <option value="Putter">Putter Fitting - R350</option>
+                    <label for="service">Service Required</label>
+                    <select name="service" id="service" required>
+                        <option value="">-- Please choose a service --</option>
+                        <option value="Full Bag Fitting">Full Bag Fitting - R999</option>
+                        <option value="Single Club Fitting">Single Club Fitting - R450</option>
+                        <option value="Driver Fitting">Driver Only Fitting - R499</option>
+                        <option value="Putter Fitting">Putter Fitting - R350</option>
+                        <option value="Equipment Repair">Equipment Repair</option>
+                        <option value="Golf Coaching">Golf Coaching</option>
+                        <option value="Other Enquiry">Other Enquiry</option>
                     </select>
                 </div>
 
@@ -99,44 +118,9 @@
                     <select name="location" id="location" required>
                         <option value="">-- Please choose location --</option>
                         <option value="Johannesburg">Johannesburg - Sandton</option>
-                        <option value="cape_town">Cape Town - Claremont</option>
+                        <option value="Cape Town">Cape Town - Claremont</option>
                         <option value="Durban">Durban - Umhlanga</option>
                     </select>
-                </div>
-
-                <!--patner golf club selection-->
-                <div class="form_row">
-                    <label for="partner_club">Partner Golf Club (optional)</label>
-                    <select name="partner_club" id="partner_club">
-                        <option value="">-- No preference / Not a member --</option>
-
-                        <!--johannesburg-->
-                        <optgroup label="Johannesburg">
-                            <option value="rjk">Royal Johannesburg and Kensington Golf Club</option>
-                            <option value="soweto">Soweto Country Club</option>
-                        </optgroup>
-
-                        <!--Cape Town clubs-->
-                        <optgroup label="Cape Town">
-                            <option value="royal_cape">Royal Cape Golf Club</option>
-                        </optgroup>
-
-                        <!--Durban clubs-->
-                        <optgroup label="Durban">
-                            <option value="beachwood">Beachwood Golf Club</option>
-                        </optgroup>
-
-                        <!--other-->
-                        <optgroup label="Other Locations">
-                            <option value="fancourt">Ernie Els at Fancourt (Garden Route)</option>
-                            <option value="sun_city">Sun City Gary Player Country Club</option>
-                        </optgroup>
-                    </select>
-                    <!--note below dropdown-->
-                    <p style="font-size: 13px; color: #777777; margin-top: 5px;">
-                        Members of partner clubs receive a 10% discount on all fitting services.
-                        Please bring your membership card on the day.
-                    </p>
                 </div>
 
                 <!--Preferred date-->
@@ -145,37 +129,20 @@
                     <input type="date" id="preferred_date" name="preferred_date">
                 </div>
 
-                <!--Preferred time-->
+                <!--Message / Additional Notes-->
                 <div class="form_row">
-                    <label for="preferred_time">Preferred Time</label>
-                    <select name="preferred_time" id="preferred_time">
-                        <option value="">--Please choose a time slot --</option>
-                        <option value="08:00">08:00 AM</option>
-                        <option value="09:00">09:00 AM</option>
-                        <option value="10:00">10:00 AM</option>
-                        <option value="11:00">11:00 AM</option>
-                        <option value="12:00">12:00 PM</option>
-                        <option value="13:00">13:00 PM</option>
-                        <option value="14:00">14:00 PM</option>
-                        <option value="15:00">15:00 PM</option>
-                        <option value="16:00">16:00 PM</option>
-                    </select>
-                </div>
-
-                <!--extra notes-->
-                <div class="form_row">
-                    <label for="fitting_notes">Additional Notes (optional)</label>
-                    <textarea name="notes" id="fitting_notes" placeholder="Tell us about your current equipment, any injuries or specific goals."></textarea>
+                    <label for="message">Message / Additional Notes</label>
+                    <textarea name="message" id="message" placeholder="Tell us about your current equipment, any injuries, specific goals, or other details..." required></textarea>
                 </div>
 
                 <!--submit button-->
-                <button type="submit" class="form_submit">Submit Fitting Booking</button>
+                <button type="submit" class="form_submit">Send Enquiry</button>
 
             </form>
         </section>
 
         <!--service request-->
-        <section id="service_request">
+        <section id="service_request" style="display: none;">
             <h2>Service Request Form</h2>
 
             <p>
@@ -272,5 +239,7 @@
         </div>
     </footer>
     
+    <script src="js/enquiry.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

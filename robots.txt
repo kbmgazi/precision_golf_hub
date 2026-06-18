@@ -1,0 +1,23 @@
+# Precision Golf Hub - robots.txt
+# Directs search engine crawlers on which pages to index
+
+# Allow all search engines
+User-agent: *
+Allow: /
+Disallow: /private/
+
+# Google-specific
+User-agent: Googlebot
+Allow: /
+Disallow: /private/
+
+# Bing-specific
+User-agent: Bingbot
+Allow: /
+Disallow: /private/
+
+# Sitemap location
+Sitemap: https://precisiongolfhub.co.za/sitemap.xml
+
+# Crawl delay (in seconds)
+Crawl-delay: 1

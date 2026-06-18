@@ -4,8 +4,27 @@
     <!--Basic browser info-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Precision Golf Hub - Golf equipment, club fitting , coaching and more">
-    <title>Precision Golf Hub | Products</title>
+    <meta name="description" content="Golf Equipment Store - Browse our selection of drivers, irons, putters, golf balls, apparel, and accessories from leading brands.">
+    <meta name="keywords" content="golf equipment, golf clubs, drivers, irons, putters, golf balls, golf apparel, golf accessories, online golf store">
+    <meta name="author" content="Precision Golf Hub">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://precisiongolfhub.co.za/products.html">
+    
+    <!--Open Graph-->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Golf Equipment & Apparel - Shop Premium Brands">
+    <meta property="og:description" content="Explore drivers, irons, putters, golf balls, apparel and accessories from top brands at Precision Golf Hub.">
+    <meta property="og:url" content="https://precisiongolfhub.co.za/products.html">
+    <meta property="og:image" content="https://precisiongolfhub.co.za/images/golf-header.jpg">
+    <meta property="og:site_name" content="Precision Golf Hub">
+    
+    <!--Twitter Card-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Golf Equipment & Apparel - Shop Premium Brands">
+    <meta name="twitter:description" content="Browse and shop premium golf equipment, clubs, balls, and apparel online.">
+    <meta name="twitter:image" content="https://precisiongolfhub.co.za/images/golf-header.jpg">
+    
+    <title>Golf Equipment & Apparel Store | Precision Golf Hub</title>
 
     <!--css link-->
     <link rel="stylesheet" href="css/styles.css">
@@ -41,6 +60,34 @@
                 Browse our range of drivers, irons , golf balls, apparel and accessories
                 from the world's leading brands.
             </p>
+
+            <!--Search and Filter-->
+            <div style="background-color: var(--bg-alt); padding: 1.6rem; border-radius: 8px; margin-bottom: 2.4rem;">
+                <div style="margin-bottom: 1.6rem;">
+                    <label for="product_search" style="display: block; font-weight: 600; color: var(--green); margin-bottom: 0.8rem;">Search Products</label>
+                    <input type="text" id="product_search" placeholder="Search by product name, brand, or description..." 
+                           style="width: 100%; padding: 0.8rem 1.2rem; border: 2px solid var(--border); border-radius: 4px; font-size: 1rem;">
+                    <p id="search_result_count" style="margin-top: 0.5rem; font-size: 0.9rem; color: var(--text-light);"></p>
+                </div>
+
+                <div>
+                    <label style="display: block; font-weight: 600; color: var(--green); margin-bottom: 0.8rem;">Filter by Category</label>
+                    <div style="display: flex; flex-wrap: wrap; gap: 0.8rem;">
+                        <button data-filter="all" class="active" style="padding: 0.6rem 1.2rem; border: 2px solid var(--green); background: var(--green); color: white; border-radius: 4px; cursor: pointer; font-weight: 600;">All Products</button>
+                        <button data-filter="drivers" style="padding: 0.6rem 1.2rem; border: 2px solid var(--border); background: white; color: var(--green); border-radius: 4px; cursor: pointer; font-weight: 600;">Drivers</button>
+                        <button data-filter="irons" style="padding: 0.6rem 1.2rem; border: 2px solid var(--border); background: white; color: var(--green); border-radius: 4px; cursor: pointer; font-weight: 600;">Irons</button>
+                        <button data-filter="putters" style="padding: 0.6rem 1.2rem; border: 2px solid var(--border); background: white; color: var(--green); border-radius: 4px; cursor: pointer; font-weight: 600;">Putters</button>
+                        <button data-filter="balls" style="padding: 0.6rem 1.2rem; border: 2px solid var(--border); background: white; color: var(--green); border-radius: 4px; cursor: pointer; font-weight: 600;">Balls</button>
+                        <button data-filter="apparel" style="padding: 0.6rem 1.2rem; border: 2px solid var(--border); background: white; color: var(--green); border-radius: 4px; cursor: pointer; font-weight: 600;">Apparel</button>
+                        <button data-filter="accessories" style="padding: 0.6rem 1.2rem; border: 2px solid var(--border); background: white; color: var(--green); border-radius: 4px; cursor: pointer; font-weight: 600;">Accessories</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Products Grid-->
+            <div id="product_grid" class="product_grid" style="margin-bottom: 2.4rem;">
+                <!-- Products will be rendered here -->
+            </div>
 
             <!--Contact info-->
             <section id="contact_info">
@@ -99,7 +146,7 @@
                     </div>
 
                      <div class="product">
-                        <img src="images/G430 Max.png" alt="G430 Max">
+                        <img src="images/G430 Max.png" alt="G430 Max" class="lightbox-trigger" data-lightbox="images/G430 Max.png" data-caption="PING G430 Max">
                         <p class="brand">PING</p>
                         <h3>G430 Max</h3>
                         <p>Available in 9, 10.5 and 12 degrees.</p>
@@ -108,7 +155,7 @@
                     </div>
 
                      <div class="product">
-                        <img src="images/TSR3 Driver.png" alt="TSR3 Driver" width="88" height="88">
+                        <img src="images/TSR3 Driver.png" alt="TSR3 Driver" class="lightbox-trigger" data-lightbox="images/TSR3 Driver.png" data-caption="Titleist TSR3 Driver">
                         <p class="brand">Titleist</p>
                         <h3>TSR3 Driver</h3>
                         <p>Available in 9, 10.5 and 12 degrees.</p>
@@ -125,7 +172,7 @@
                 <div class="product_grid">
                     
                     <div class="product">
-                    <img src="images/Apex Iron Set.png" alt="Apex Iron set (5-PW)" width="88" height="88">
+                    <img src="images/Apex Iron Set.png" alt="Apex Iron set (5-PW)" class="lightbox-trigger" data-lightbox="images/Apex Iron Set.png" data-caption="Callaway Apex Iron Set (5-PW)">
                     <p class="brand">Callaway</p>
                     <h3>Apex Iron set (5-PW)</h3>
                     <p>Editor's pick for 2024</p>
@@ -134,7 +181,7 @@
                     </div>
 
                     <div class="product">
-                    <img src="images/JPX 925 Forged.png" alt="JPX 925 Forged (4-PW)" width="88" height="88">
+                    <img src="images/JPX 925 Forged.png" alt="JPX 925 Forged (4-PW)" class="lightbox-trigger" data-lightbox="images/JPX 925 Forged.png" data-caption="Mizuno JPX 925 Forged (4-PW)">
                     <p class="brand">Mizuno</p>
                     <h3>JPX 925 Forged (4-PW)</h3>
                     <p>Premium forged irons</p>
@@ -143,7 +190,7 @@
                     </div>
 
                     <div class="product">
-                    <img src="images/P790 Irons.png" alt="P790 Irons (4-PW)" width="88" height="88">
+                    <img src="images/P790 Irons.png" alt="P790 Irons (4-PW)" class="lightbox-trigger" data-lightbox="images/P790 Irons.png" data-caption="TaylorMade P790 Irons (4-PW)">
                     <p class="brand">TaylorMade</p>
                     <h3>P790 Irons (4-PW)</h3>
                     <p>On sale this month.</p>
@@ -345,5 +392,8 @@
         </div>
     </footer>
     
+    <script src="js/products.js"></script>
+    <script src="js/products-loader.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

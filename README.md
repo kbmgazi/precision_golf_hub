@@ -314,7 +314,235 @@ The sitemap below illustrates the full page structure and hierarchy of the Preci
 
 ---
 
+## Part 3 Details — Functionality, Interactivity and SEO *(Completed)*
+
+### JavaScript Architecture
+
+The website uses a **vanilla JavaScript** (no frameworks) modular architecture with feature-specific functionality files. All JavaScript initializes on `DOMContentLoaded` with automatic feature detection.
+
+#### Core JavaScript Modules
+
+**`js/main.js`** — Central Hub (Initializes all interactive features)
+- `initStickyNav()` — Sticky navigation header with logo compacting after 80px scroll
+- `initBackToTop()` — Floating back-to-top button with smooth scroll animation
+- `initActiveNavLink()` — Auto-detects current page and highlights active nav link
+- `initScrollAnimations()` — Intersection Observer for fade-in animations on scroll
+- `initAccordion()` — Collapsible accordion sections with one-open-per-group behavior
+- `initLightbox()` — Image gallery lightbox with keyboard navigation (arrow keys, Escape)
+
+**`js/products.js`** — Product Data Store (18 products across 6 categories)
+- `getAllProducts()` — Return complete product array
+- `getProductsByCategory(category)` — Filter products by category
+- `searchProducts(query)` — Full-text search across name, brand, description
+- `getProductById(id)` — Single product lookup
+- Product categories: Drivers, Irons, Putters, Balls, Apparel, Accessories
+
+**`js/products-loader.js`** — Dynamic Product Rendering
+- `renderProducts(products, containerId)` — Generate HTML for product grid with lightbox integration
+- `filterByCategory(category)` — Update display for selected category
+- `searchProductsUI(query)` — Execute search with result count display
+- `initProductsUI()` — Attach event listeners to search input and filter buttons
+
+**`js/offers.js`** — Offers Data Store (6 active offers)
+- `getAllOffers()` — Return complete offers array
+- `getFeaturedOffers()` — Filter featured offers
+- `getOffersByCategory(category)` — Filter offers by equipment category
+- `getActiveOffers()` — Return only non-expired offers
+- `searchOffers(query)` — Full-text search across offers
+
+**`js/offers-loader.js`** — Dynamic Offers Rendering
+- `renderOffers(offers, containerId)` — Generate HTML for offers display with expiration dates
+- `filterOffersByCategory(category)` — Update display by category
+- `searchOffersUI(query)` — Execute search functionality
+- `initOffersUI()` — Attach event listeners and initialize rendering
+
+**`js/maps.js`** — Interactive Leaflet.js Maps
+- `initMaps()` — Initialize all three location maps (Johannesburg, Cape Town, Durban)
+- `initMap(location)` — Create individual map with custom green marker and popup
+- Uses Leaflet.js 1.9.4 from CDN (https://unpkg.com/leaflet@1.9.4)
+- Custom styling with Precision Golf Hub branding colors
+
+**`js/enquiry.js`** — Form Validation & Formspree Integration
+- `validateEnquiryForm(formData)` — Client-side validation with detailed error messages
+- `handleEnquirySubmit(e)` — Form submission with Formspree AJAX integration
+- Real-time blur validation for each field
+- Visual field error highlighting with custom styling
+- Success/error message display with auto-hide
+- Email format, phone format (South African), and message length validation
+
+**`js/contact.js`** — Contact Form Validation & EmailJS
+- `validateContactForm(formData)` — Client-side validation
+- `handleContactSubmit(e)` — Form submission with EmailJS integration
+- Auto-loads EmailJS library from CDN
+- Real-time field validation with blur events
+- Visual feedback for validation errors
+- Requires EmailJS account setup (service ID, template ID, public key)
+
+#### Interactive Features Implemented
+
+1. **Sticky Navigation** — Compacts header after 80px scroll, improves space efficiency
+2. **Back-to-Top Button** — Appears after 300px scroll, smooth animated scroll to top
+3. **Active Nav Link Detection** — Automatically highlights current page in navigation
+4. **Scroll-Triggered Animations** — Fade-in and slide effects using Intersection Observer
+5. **Accordion Components** — Collapsible sections on Services and Tips pages with keyboard support
+6. **Lightbox Gallery** — Image viewer with prev/next navigation, keyboard support (arrows, Escape)
+7. **Product Search & Filter** — Real-time search across 18 products with category filtering
+8. **Offers Search & Filter** — Search offers with category-based filtering and expiration tracking
+9. **Interactive Maps** — Leaflet.js maps for 3 South African locations with custom markers
+10. **Form Validation** — Client-side validation on Enquiry and Contact forms with visual feedback
+
+### SEO and Meta Tags Implementation
+
+All 8 pages now include comprehensive SEO optimization:
+
+#### Meta Tags Added to Each Page
+- **Meta Description** — Unique 155-160 character descriptions for each page
+- **Keywords** — Relevant keywords for each page's content
+- **Author** — "Precision Golf Hub"
+- **Robots** — "index, follow" for search engine crawling
+- **Canonical URLs** — Prevent duplicate content issues
+- **Open Graph Tags** — Facebook, LinkedIn, WhatsApp sharing optimization
+  - `og:type`, `og:title`, `og:description`, `og:url`, `og:image`, `og:site_name`
+- **Twitter Card Tags** — Twitter/X sharing optimization
+  - `twitter:card`, `twitter:title`, `twitter:description`, `twitter:image`
+
+#### Structured Data (JSON-LD)
+- Homepage includes LocalBusiness schema with complete business information
+- Name, phone, email, address, social media links, price range
+- Enables rich snippets in search results
+
+#### SEO Page Optimization
+- **index.html** — Home page with business overview and primary keywords
+- **about.html** — Mission, vision, values with brand-focused keywords
+- **services.html** — Service descriptions with keyword-rich titles
+- **products.html** — Equipment store optimization with product keywords
+- **tips.html** — Golf education content with informational keywords
+- **offers.html** — Promotions page with e-commerce keywords
+- **contact.html** — Location and contact information with local SEO optimization
+- **enquiry.html** — Booking optimization for service appointment keywords
+
+### Search Engine Visibility Files
+
+**`robots.txt`** — Search Engine Crawler Directives
+- Allows all search engines (Googlebot, Bingbot) full access
+- Disallows `/private/` directory
+- Specifies sitemap location for easy discovery
+- Sets crawl delay to 1 second
+
+**`sitemap.xml`** — URL Submission and Hierarchy
+- Includes all 8 HTML pages with priority levels
+- Home page: priority 1.0 (highest)
+- Product/Offers pages: priority 0.9 (frequent updates)
+- Service/Contact/Tips pages: priority 0.8 (static content)
+- Specifies change frequency (weekly, monthly, bi-weekly)
+- Enables faster indexing of all pages
+
+### Form Validation and Submission
+
+#### Enquiry Form (`enquiry.html`)
+- Fields: Name, Email, Phone, Service, Location, Date, Message
+- Validation rules:
+  - Name: minimum 2 characters
+  - Email: valid email format (regex validation)
+  - Phone: South African format (10+ digits with allowable characters)
+  - Service: required field selection
+  - Message: minimum 10 characters
+- Integration: Formspree (requires account setup with FORMSPREE_ID)
+- Submission: AJAX request to `https://formspree.io/f/{FORMSPREE_ID}`
+- User feedback: Success message displays, form resets on successful submission
+
+#### Contact Form (`contact.html`)
+- Fields: Name, Email, Phone, Subject, Message
+- Same validation rules as enquiry form
+- Integration: EmailJS (requires EmailJS account with service and template IDs)
+- Submission: AJAX request to EmailJS API
+- User feedback: Color-coded success/error messages with auto-hide
+
+### External Libraries and Dependencies
+
+| Library | Version | Purpose | URL |
+|---|---|---|---|
+| Leaflet.js | 1.9.4 | Interactive mapping | https://unpkg.com/leaflet@1.9.4 |
+| EmailJS | 3.x | Email delivery API | https://cdn.jsdelivr.net/npm/@emailjs/browser |
+| Formspree | — | Form submission service | https://formspree.io |
+
+### CSS Enhancements for Interactivity
+
+New CSS additions for interactive features:
+
+```css
+/* Accordion styling */
+.accordion { ... }
+.accordion-header { ... }
+.accordion-content { ... }
+
+/* Lightbox styling */
+.lightbox { ... }
+.lightbox-trigger { ... }
+.lightbox-prev/next/close { ... }
+
+/* Form validation styling */
+#form_message { ... }
+input[style*="border-color: var(--text-danger)"] { ... }
+
+/* Filter button active state */
+[data-filter].active { ... }
+
+/* Product/Offers grid */
+.product_grid { ... }
+.offer_grid { ... }
+```
+
+### Responsive Design for Interactive Features
+
+All interactive components are fully responsive:
+- Accordion headers stack on mobile
+- Lightbox scales to viewport width with touch-friendly controls
+- Maps responsive with full-width containers
+- Forms optimize for mobile input
+- Filter buttons wrap on narrow screens
+- Search inputs full-width on mobile
+
+### Performance Optimizations
+
+- Lazy initialization of interactive features on `DOMContentLoaded`
+- Intersection Observer for efficient scroll animation detection
+- Debounced search input to reduce filtering operations
+- CSS transitions for smooth animations (no JavaScript animation)
+- External scripts loaded after page content
+
+### Browser Compatibility
+
+Tested and compatible with:
+- Chrome/Chromium (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+- Mobile browsers (iOS Safari, Chrome Mobile)
+
+### Setup Instructions for Forms
+
+#### Formspree Setup (Enquiry Form)
+1. Create account at https://formspree.io
+2. Add new form and get your FORMSPREE_ID
+3. Replace `YOUR_FORMSPREE_ID_HERE` in `js/enquiry.js` line 4
+4. Test form submission
+
+#### EmailJS Setup (Contact Form)
+1. Create account at https://www.emailjs.com
+2. Create email service and get SERVICE_ID
+3. Create email template and get TEMPLATE_ID
+4. Get your PUBLIC_KEY from account settings
+5. Replace these values in `js/contact.js`:
+   - Line 4: `EMAILJS_SERVICE_ID`
+   - Line 5: `EMAILJS_TEMPLATE_ID`
+   - Line 6: `EMAILJS_PUBLIC_KEY`
+6. Test form submission
+
+---
+
 ## References
+
 
 Afrihost. (2025) *Web hosting services*. Available at: https://www.afrihost.com (Accessed: 11 April 2025).
 

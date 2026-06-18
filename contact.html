@@ -4,11 +4,34 @@
     <!--Basic browser info-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Precision Golf Hub - Golf equipment, club fitting , coaching and more">
-    <title>Precision Golf Hub | Contact Us</title>
+    <meta name="description" content="Contact Precision Golf Hub - Get in touch with our team in Johannesburg, Cape Town, and Durban. Phone, email, and interactive location maps.">
+    <meta name="keywords" content="contact golf hub, golf services contact, South Africa golf, Johannesburg Cape Town Durban golf">
+    <meta name="author" content="Precision Golf Hub">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://precisiongolfhub.co.za/contact.html">
+    
+    <!--Open Graph-->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Contact Precision Golf Hub - Get in Touch">
+    <meta property="og:description" content="Contact us in Johannesburg, Cape Town, and Durban. Find our location, phone number, and email address.">
+    <meta property="og:url" content="https://precisiongolfhub.co.za/contact.html">
+    <meta property="og:image" content="https://precisiongolfhub.co.za/images/golf-header.jpg">
+    <meta property="og:site_name" content="Precision Golf Hub">
+    
+    <!--Twitter Card-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact Precision Golf Hub - Get in Touch">
+    <meta name="twitter:description" content="Find our contact details and locations in South Africa. Interactive maps for Johannesburg, Cape Town, and Durban.">
+    <meta name="twitter:image" content="https://precisiongolfhub.co.za/images/golf-header.jpg">
+    
+    <title>Contact Us | Precision Golf Hub - South Africa Locations</title>
 
     <!--css link-->
     <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Leaflet.js CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
 </head>
 <body>
     <!--header-->
@@ -76,48 +99,63 @@
             </div>
 
             <!--Quick contact form-->
-            <h3>Send Us a Quick Message</h3>
-            <form action="mailto:info@precisiongolfhub.co.za" method="post">
+            <h3>Send Us a Message</h3>
+            <form id="contact_form" action="" method="post">
+                <!--form message container-->
+                <div id="contact_form_message" style="display: none;"></div>
 
                 <div class="form_row">
-                    <label for="ct_name">Your Name</label>
-                    <input type="text" id="ct_name" name="full_name" placeholder="Enter your name" required>
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
                 </div>
 
                 <div class="form_row">
-                    <label for="ct_email">Email Address</label>
-                    <input type="email" id="ct_email" name="email" placeholder="Enter your email" required>
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
                 </div>
 
                 <div class="form_row">
-                    <label for="ct_phone">Phone Number</label>
-                    <input type="tel" id="ct_phone" name="phone" placeholder="e.g 083 862 6545" >
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="e.g. +27 83 862 6545" required>
                 </div>
 
                 <div class="form_row">
-                    <label for="ct_subject">Subject</label>
-                    <select name="subject" id="ct_subject">
-                        <option value="">-- Choose a subject --</option>
-                        <option value="fitting">Club fitting</option>
-                        <option value="repair">Clib repair</option>
-                        <option value="balls">Ball personalisation</option>
-                        <option value="products">Product Availability</option>
-                        <option value="feedback">Feedback</option>
-                        <option value="other">Other</option>
-                    </select>
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="What is your message about?" required>
                 </div>
 
                 <div class="form_row">
-                    <label for="ct_message">Message</label>
-                    <textarea name="message" id="ct_message" placeholder="How can we help you?"></textarea>
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" placeholder="Tell us more about your enquiry..." required></textarea>
                 </div>
 
                 <button type="submit" class="form_submit">Send Message</button>
             </form>
         </section>
 
-        <!--map locations-->
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3568.5046871930217!2d27.964936575501987!3d-26.115273960358294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e957526683ef829%3A0x80d5db3cee26e858!2s14%20Fairway%20Dr%2C%20Randpark%2C%20Randburg%2C%202194!5e1!3m2!1sen!2sza!4v1776593284789!5m2!1sen!2sza" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
+        <!--interactive map locations-->
+        <section>
+            <h2>Our Three Locations</h2>
+            <p>Visit any of our three showrooms across South Africa. All locations have full demonstration stock available.</p>
+            
+            <!--Johannesburg Map-->
+            <section>
+                <h3>Johannesburg Showroom</h3>
+                <div id="map_johannesburg" style="height: 400px; border-radius: 8px; margin-bottom: 2rem;"></div>
+            </section>
+
+            <!--Cape Town Map-->
+            <section>
+                <h3>Cape Town Showroom</h3>
+                <div id="map_capetown" style="height: 400px; border-radius: 8px; margin-bottom: 2rem;"></div>
+            </section>
+
+            <!--Durban Map-->
+            <section>
+                <h3>Durban Showroom</h3>
+                <div id="map_durban" style="height: 400px; border-radius: 8px; margin-bottom: 2rem;"></div>
+            </section>
+        </section>
 
     </main>
 
@@ -148,5 +186,11 @@
         </div>
     </footer>
     
+    <!-- Leaflet.js Library -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    
+    <script src="js/maps.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
