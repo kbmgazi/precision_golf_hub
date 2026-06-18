@@ -9,7 +9,7 @@
 | **Full Name** | Keamohetse Biotshepo Mgazi|
 | **Student Number** | ST10511607 |
 | **Module Name** | WEDE5020 |
-| **Submission Date** | 29 May 2025 |
+| **Submission Date** | 19 June 2025 |
 
 ---
 
@@ -591,6 +591,48 @@ The Pro Shop. (2026i) Titleist Pro V1 Golf Balls. Available at: https://www.thep
 Titleist. (2026) TSR3 Driver. Available at: https://www.titleist.com/golf-clubs/drivers/tsr3 (Accessed: 19 April 2026).
 
 W3Schools. (2025) *CSS Tutorial*. Available at: https://www.w3schools.com/css/ (Accessed: 1 May 2026).
+
+Ahrefs (2026) What is SEO? Available at: https://ahrefs.com/blog/what-is-seo/ (Accessed: 18 June 2026).
+
+Bootstrap (2026) Bootstrap Documentation. Available at: https://getbootstrap.com/docs/ (Accessed: 18 June 2026).
+
+Git (2026) Git Documentation. Available at: https://git-scm.com/doc (Accessed: 18 June 2026).
+
+Google Developers (2026a) Google Maps JavaScript API. Available at: https://developers.google.com/maps/documentation/javascript (Accessed: 18 June 2026).
+
+Google Developers (2026b) SEO Starter Guide. Available at: https://developers.google.com/search/docs/fundamentals/seo-starter-guide (Accessed: 18 June 2026).
+
+Google web.dev (2026) Web Performance Basics. Available at: https://web.dev/performance/ (Accessed: 18 June 2026).
+
+jQuery Foundation (2026) jQuery Documentation. Available at: https://jquery.com/ (Accessed: 18 June 2026).
+
+Leaflet (2026) Leaflet Documentation. Available at: https://leafletjs.com/ (Accessed: 18 June 2026).
+
+Mapbox (2026) Mapbox Documentation. Available at: https://docs.mapbox.com/ (Accessed: 18 June 2026).
+
+MDN Web Docs (2026a) AJAX introduction. Available at: https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX (Accessed: 18 June 2026).
+
+MDN Web Docs (2026b) CSS Transitions. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_transitions (Accessed: 18 June 2026).
+
+MDN Web Docs (2026c) Fetch API. Available at: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API (Accessed: 18 June 2026).
+
+MDN Web Docs (2026d) Form validation. Available at: https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation (Accessed: 18 June 2026).
+
+MDN Web Docs (2026e) HTML Forms. Available at: https://developer.mozilla.org/en-US/docs/Learn/Forms (Accessed: 18 June 2026).
+
+MDN Web Docs (2026f) JavaScript Guide. Available at: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide (Accessed: 18 June 2026).
+
+Moz (2026) Beginner’s Guide to SEO. Available at: https://moz.com/beginners-guide-to-seo (Accessed: 18 June 2026).
+
+OpenLayers (2026) OpenLayers Documentation. Available at: https://openlayers.org/ (Accessed: 18 June 2026).
+
+OWASP Foundation (2026) OWASP Top Ten Web Application Security Risks. Available at: https://owasp.org/www-project-top-ten/ (Accessed: 18 June 2026).
+
+The Independent Institute of Education (Pty) Ltd (2026) Web Development Project Brief (Part 3).
+
+W3Schools (2026a) HTML Forms. Available at: https://www.w3schools.com/html/html_forms.asp (Accessed: 18 June 2026).
+
+W3Schools (2026b) JavaScript Tutorial. Available at: https://www.w3schools.com/js/ (Accessed: 18 June 2026).
 
 ---
 
